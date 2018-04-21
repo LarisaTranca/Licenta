@@ -23,9 +23,7 @@ const SCREEN_HEIGHT = Dimensions.get('window').height;
 class Background extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      cityName: ''
-    };
+  this.state = { cityName: this.props.cityName } ;
   }
   componentWillReceiveProps(next) {
     if (this.props.cityName !== next.cityName) {
@@ -82,8 +80,7 @@ const styles = StyleSheet.create({
   },
   headerView: {
     width: SCREEN_WIDTH,
-    height: SCREEN_HEIGHT,
-    backgroundColor: '#589BC7'
+    height: SCREEN_HEIGHT
   },
   location: {
     fontSize: 20,

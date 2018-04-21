@@ -6,9 +6,9 @@ import {
 	View,
 	ImageBackground
 } from 'react-native';
-import bgSrc from './img/Snow.png';
+import bgSrc from './img/clouds2.jpg';
 
-export default class Wallpaper extends Component {
+export default class Wallpaper extends React.Component {
 	render() {
 		return (
 			<ImageBackground style={styles.picture} source={bgSrc}>
@@ -23,6 +23,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 		width: null,
 		height: null,
-		resizeMode: 'cover',
+		opacity: 0.77
 	},
 });
