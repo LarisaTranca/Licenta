@@ -3,6 +3,8 @@ package com.weather;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.imagepicker.ImagePickerPackage;
+import com.reactnativenavigation.bridge.NavigationReactPackage;
 import com.reactnative.photoview.PhotoViewPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -14,40 +16,74 @@ import com.facebook.soloader.SoLoader;
 import java.util.Arrays;
 import java.util.List;
 import com.devfd.RNGeocoder.RNGeocoderPackage;
+import com.reactnativenavigation.NavigationApplication;
 
-public class MainApplication extends Application implements ReactApplication {
+public class MainApplication extends NavigationApplication{
+  public boolean isDebug() {
+       return BuildConfig.DEBUG;
+   }
+   protected List<ReactPackage> getPackages() {
+     return Arrays.<ReactPackage>asList(
+         new MainReactPackage(),
+            new ImagePickerPackage(),
+           new NavigationReactPackage(),
+           new PhotoViewPackage(),
+           new LinearGradientPackage(),
+           new VectorIconsPackage(),
+          new RNGeocoderPackage()
+     );
+   }
 
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
-    @Override
-    public boolean getUseDeveloperSupport() {
-      return BuildConfig.DEBUG;
+   public List<ReactPackage> createAdditionalReactPackages() {
+        return getPackages();
     }
 
     @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new PhotoViewPackage(),
-            new LinearGradientPackage(),
-            new VectorIconsPackage(),
-           new RNGeocoderPackage()
-      );
-    }
-
-    @Override
-    protected String getJSMainModuleName() {
+    public String getJSMainModuleName() {
       return "index";
     }
-  };
-
-  @Override
-  public ReactNativeHost getReactNativeHost() {
-    return mReactNativeHost;
-  }
+  // private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+  //   @Override
+  //   public boolean getUseDeveloperSupport() {
+  //     return BuildConfig.DEBUG;
+  //   }
+  //
+  //   @Override
+  //   protected List<ReactPackage> getPackages() {
+  //     return Arrays.<ReactPackage>asList(
+  //         new MainReactPackage(),
+  //           new NavigationReactPackage(),
+  //           new PhotoViewPackage(),
+  //           new LinearGradientPackage(),
+  //           new VectorIconsPackage(),
+  //          new RNGeocoderPackage()
+  //     );
+  //   }
+  //
+  //   @Override
+  //   protected String getJSMainModuleName() {
+  //     return "index";
+  //   }
+  //     public List<ReactPackage> createAdditionalReactPackages() {
+  //         return getPackages();
+  //     }
+  //
+  //      public boolean isDebug() {
+  //          // Make sure you are using BuildConfig from your own application
+  //          return BuildConfig.DEBUG;
+  //      }
+  // };
+  //
+  // @Override
+  // public ReactNativeHost getReactNativeHost() {
+  //   return mReactNativeHost;
+  // }
 
   @Override
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
   }
+
+
 }

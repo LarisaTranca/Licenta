@@ -8,7 +8,6 @@ export default class Locations extends React.Component {
     var items = ['Simon Mignolet','Nathaniel Clyne','Dejan Lovren','Mama Sakho','Emre Can'];
     return (
       <Container>
-       <Header />
        <Content>
          <List dataArray={items}
            renderRow={(item) =>

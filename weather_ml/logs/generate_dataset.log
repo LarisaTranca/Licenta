@@ -1,0 +1,1177 @@
+2018-04-23 21:33:49,449 - generate_dataset - INFO - Processing Norway/Oslo date 20180409...
+2018-04-23 21:34:00,038 - generate_dataset - INFO - Processing Norway/Oslo date 20180410...
+2018-04-23 21:34:10,591 - generate_dataset - INFO - Processing Norway/Oslo date 20180411...
+2018-04-23 21:34:21,225 - generate_dataset - INFO - Processing Norway/Oslo date 20180412...
+2018-04-23 21:34:31,853 - generate_dataset - INFO - Processing Norway/Oslo date 20180413...
+2018-04-23 21:34:42,596 - generate_dataset - INFO - Processing Norway/Oslo date 20180414...
+2018-04-23 21:34:52,944 - generate_dataset - INFO - Processing Norway/Oslo date 20180415...
+2018-04-23 21:35:03,471 - generate_dataset - INFO - Processing Norway/Oslo date 20180416...
+2018-04-23 21:35:14,318 - generate_dataset - INFO - Processing Norway/Oslo date 20180417...
+2018-04-23 21:35:24,860 - generate_dataset - INFO - Processing Norway/Oslo date 20180418...
+2018-04-23 21:35:35,364 - generate_dataset - INFO - Processing Norway/Oslo date 20180419...
+2018-04-23 21:35:45,924 - generate_dataset - INFO - Processing Norway/Oslo date 20180420...
+2018-04-23 21:35:56,327 - generate_dataset - INFO - Processing Norway/Oslo date 20180421...
+2018-04-23 21:36:06,692 - generate_dataset - INFO - Processing Norway/Oslo date 20180422...
+2018-04-23 21:36:17,071 - generate_dataset - INFO - Processing Norway/Stavanger date 20180409...
+2018-04-23 21:36:27,669 - generate_dataset - INFO - Processing Norway/Stavanger date 20180410...
+2018-04-23 21:36:38,320 - generate_dataset - INFO - Processing Norway/Stavanger date 20180411...
+2018-04-23 21:36:48,941 - generate_dataset - INFO - Processing Norway/Stavanger date 20180412...
+2018-04-23 21:36:59,392 - generate_dataset - INFO - Processing Norway/Stavanger date 20180413...
+2018-04-23 21:37:10,080 - generate_dataset - INFO - Processing Norway/Stavanger date 20180414...
+2018-04-23 21:37:20,628 - generate_dataset - INFO - Processing Norway/Stavanger date 20180415...
+2018-04-23 21:37:31,388 - generate_dataset - INFO - Processing Norway/Stavanger date 20180416...
+2018-04-23 21:37:42,025 - generate_dataset - INFO - Processing Norway/Stavanger date 20180417...
+2018-04-23 21:37:52,562 - generate_dataset - INFO - Processing Norway/Stavanger date 20180418...
+2018-04-23 21:38:03,099 - generate_dataset - INFO - Processing Norway/Stavanger date 20180419...
+2018-04-23 21:38:13,648 - generate_dataset - INFO - Processing Norway/Stavanger date 20180420...
+2018-04-23 21:38:24,193 - generate_dataset - INFO - Processing Norway/Stavanger date 20180421...
+2018-04-23 21:38:34,812 - generate_dataset - INFO - Processing Norway/Stavanger date 20180422...
+2018-04-23 21:38:45,180 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180409...
+2018-04-23 21:38:55,662 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180410...
+2018-04-23 21:39:06,322 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180411...
+2018-04-23 21:39:16,959 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180412...
+2018-04-23 21:39:27,588 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180413...
+2018-04-23 21:39:38,100 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180414...
+2018-04-23 21:39:48,763 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180415...
+2018-04-23 21:39:59,308 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180416...
+2018-04-23 21:40:09,882 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180417...
+2018-04-23 21:40:20,484 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180418...
+2018-04-23 21:40:30,990 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180419...
+2018-04-23 21:40:41,515 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180420...
+2018-04-23 21:40:52,045 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180421...
+2018-04-23 21:41:02,610 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180422...
+2018-04-23 21:41:13,198 - generate_dataset - INFO - Processing Norway/Bergen date 20180409...
+2018-04-23 21:41:23,772 - generate_dataset - INFO - Processing Norway/Bergen date 20180410...
+2018-04-23 21:41:34,439 - generate_dataset - INFO - Processing Norway/Bergen date 20180411...
+2018-04-23 21:41:45,074 - generate_dataset - INFO - Processing Norway/Bergen date 20180412...
+2018-04-23 21:41:55,616 - generate_dataset - INFO - Processing Norway/Bergen date 20180413...
+2018-04-23 21:42:06,056 - generate_dataset - INFO - Processing Norway/Bergen date 20180414...
+2018-04-23 21:42:16,688 - generate_dataset - INFO - Processing Norway/Bergen date 20180415...
+2018-04-23 21:42:27,323 - generate_dataset - INFO - Processing Norway/Bergen date 20180416...
+2018-04-23 21:42:37,956 - generate_dataset - INFO - Processing Norway/Bergen date 20180417...
+2018-04-23 21:42:48,698 - generate_dataset - INFO - Processing Norway/Bergen date 20180418...
+2018-04-23 21:42:59,256 - generate_dataset - INFO - Processing Norway/Bergen date 20180419...
+2018-04-23 21:43:09,908 - generate_dataset - INFO - Processing Norway/Bergen date 20180420...
+2018-04-23 21:43:20,507 - generate_dataset - INFO - Processing Norway/Bergen date 20180421...
+2018-04-23 21:43:31,046 - generate_dataset - INFO - Processing Norway/Bergen date 20180422...
+2018-04-23 21:43:41,487 - generate_dataset - INFO - Processing Norway/Trondheim date 20180409...
+2018-04-23 21:52:13,224 - generate_dataset - INFO - Processing Norway/Oslo date 20180409...
+2018-04-23 21:52:13,250 - generate_dataset - INFO - Processing Norway/Oslo date 20180410...
+2018-04-23 21:52:13,265 - generate_dataset - INFO - Processing Norway/Oslo date 20180411...
+2018-04-23 21:52:13,269 - generate_dataset - INFO - Processing Norway/Oslo date 20180412...
+2018-04-23 21:52:13,273 - generate_dataset - INFO - Processing Norway/Oslo date 20180413...
+2018-04-23 21:52:13,276 - generate_dataset - INFO - Processing Norway/Oslo date 20180414...
+2018-04-23 21:52:13,283 - generate_dataset - INFO - Processing Norway/Oslo date 20180415...
+2018-04-23 21:52:13,286 - generate_dataset - INFO - Processing Norway/Oslo date 20180416...
+2018-04-23 21:52:13,293 - generate_dataset - INFO - Processing Norway/Oslo date 20180417...
+2018-04-23 21:52:13,298 - generate_dataset - INFO - Processing Norway/Oslo date 20180418...
+2018-04-23 21:52:13,308 - generate_dataset - INFO - Processing Norway/Oslo date 20180419...
+2018-04-23 21:52:13,311 - generate_dataset - INFO - Processing Norway/Oslo date 20180420...
+2018-04-23 21:52:13,320 - generate_dataset - INFO - Processing Norway/Oslo date 20180421...
+2018-04-23 21:52:13,332 - generate_dataset - INFO - Processing Norway/Oslo date 20180422...
+2018-04-23 21:52:13,337 - generate_dataset - INFO - Processing Norway/Stavanger date 20180409...
+2018-04-23 21:52:13,341 - generate_dataset - INFO - Processing Norway/Stavanger date 20180410...
+2018-04-23 21:52:13,345 - generate_dataset - INFO - Processing Norway/Stavanger date 20180411...
+2018-04-23 21:52:13,348 - generate_dataset - INFO - Processing Norway/Stavanger date 20180412...
+2018-04-23 21:52:13,352 - generate_dataset - INFO - Processing Norway/Stavanger date 20180413...
+2018-04-23 21:52:13,358 - generate_dataset - INFO - Processing Norway/Stavanger date 20180414...
+2018-04-23 21:52:13,374 - generate_dataset - INFO - Processing Norway/Stavanger date 20180415...
+2018-04-23 21:52:13,378 - generate_dataset - INFO - Processing Norway/Stavanger date 20180416...
+2018-04-23 21:52:13,382 - generate_dataset - INFO - Processing Norway/Stavanger date 20180417...
+2018-04-23 21:52:13,386 - generate_dataset - INFO - Processing Norway/Stavanger date 20180418...
+2018-04-23 21:52:13,392 - generate_dataset - INFO - Processing Norway/Stavanger date 20180419...
+2018-04-23 21:52:13,396 - generate_dataset - INFO - Processing Norway/Stavanger date 20180420...
+2018-04-23 21:52:13,418 - generate_dataset - INFO - Processing Norway/Stavanger date 20180421...
+2018-04-23 21:52:13,423 - generate_dataset - INFO - Processing Norway/Stavanger date 20180422...
+2018-04-23 21:52:13,428 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180409...
+2018-04-23 21:52:13,441 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180410...
+2018-04-23 21:52:13,445 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180411...
+2018-04-23 21:52:13,449 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180412...
+2018-04-23 21:52:13,453 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180413...
+2018-04-23 21:52:13,459 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180414...
+2018-04-23 21:52:13,464 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180415...
+2018-04-23 21:52:13,468 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180416...
+2018-04-23 21:52:13,472 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180417...
+2018-04-23 21:52:13,486 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180418...
+2018-04-23 21:52:13,497 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180419...
+2018-04-23 21:52:13,501 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180420...
+2018-04-23 21:52:13,506 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180421...
+2018-04-23 21:52:13,510 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180422...
+2018-04-23 21:52:13,515 - generate_dataset - INFO - Processing Norway/Bergen date 20180409...
+2018-04-23 21:52:13,519 - generate_dataset - INFO - Processing Norway/Bergen date 20180410...
+2018-04-23 21:52:13,525 - generate_dataset - INFO - Processing Norway/Bergen date 20180411...
+2018-04-23 21:52:13,528 - generate_dataset - INFO - Processing Norway/Bergen date 20180412...
+2018-04-23 21:52:13,533 - generate_dataset - INFO - Processing Norway/Bergen date 20180413...
+2018-04-23 21:52:13,565 - generate_dataset - INFO - Processing Norway/Bergen date 20180414...
+2018-04-23 21:52:13,569 - generate_dataset - INFO - Processing Norway/Bergen date 20180415...
+2018-04-23 21:52:13,572 - generate_dataset - INFO - Processing Norway/Bergen date 20180416...
+2018-04-23 21:52:13,576 - generate_dataset - INFO - Processing Norway/Bergen date 20180417...
+2018-04-23 21:52:13,580 - generate_dataset - INFO - Processing Norway/Bergen date 20180418...
+2018-04-23 21:52:13,583 - generate_dataset - INFO - Processing Norway/Bergen date 20180419...
+2018-04-23 21:52:13,588 - generate_dataset - INFO - Processing Norway/Bergen date 20180420...
+2018-04-23 21:52:13,592 - generate_dataset - INFO - Processing Norway/Bergen date 20180421...
+2018-04-23 21:52:13,597 - generate_dataset - INFO - Processing Norway/Bergen date 20180422...
+2018-04-23 21:52:13,612 - generate_dataset - INFO - Processing Norway/Trondheim date 20180409...
+2018-04-23 21:53:35,210 - generate_dataset - INFO - Processing Norway/Oslo date 20180409...
+2018-04-23 21:53:45,723 - generate_dataset - INFO - Processing Norway/Oslo date 20180410...
+2018-04-23 21:54:13,167 - generate_dataset - INFO - Processing Norway/Oslo date 20180409...
+2018-04-23 21:54:13,172 - generate_dataset - INFO - Processing Norway/Oslo date 20180410...
+2018-04-23 21:54:35,876 - generate_dataset - INFO - Processing Norway/Oslo date 20180409...
+2018-04-23 21:54:35,879 - generate_dataset - INFO - Processing Norway/Oslo date 20180410...
+2018-04-23 21:54:46,225 - generate_dataset - INFO - Processing Norway/Oslo date 20180411...
+2018-04-23 21:54:56,769 - generate_dataset - INFO - Processing Norway/Oslo date 20180412...
+2018-04-23 21:55:07,292 - generate_dataset - INFO - Processing Norway/Oslo date 20180413...
+2018-04-23 21:55:18,044 - generate_dataset - INFO - Processing Norway/Oslo date 20180414...
+2018-04-23 21:55:29,477 - generate_dataset - INFO - Processing Norway/Oslo date 20180415...
+2018-04-23 21:55:40,021 - generate_dataset - INFO - Processing Norway/Oslo date 20180416...
+2018-04-23 21:55:52,171 - generate_dataset - INFO - Processing Norway/Oslo date 20180417...
+2018-04-23 21:56:02,590 - generate_dataset - INFO - Processing Norway/Oslo date 20180418...
+2018-04-23 21:56:13,165 - generate_dataset - INFO - Processing Norway/Oslo date 20180419...
+2018-04-23 21:56:23,662 - generate_dataset - INFO - Processing Norway/Oslo date 20180420...
+2018-04-23 21:56:34,105 - generate_dataset - INFO - Processing Norway/Oslo date 20180421...
+2018-04-23 21:56:46,547 - generate_dataset - INFO - Processing Norway/Oslo date 20180422...
+2018-04-23 21:56:56,991 - generate_dataset - INFO - Processing Norway/Stavanger date 20180409...
+2018-04-23 21:57:07,792 - generate_dataset - INFO - Processing Norway/Stavanger date 20180410...
+2018-04-23 21:57:19,717 - generate_dataset - INFO - Processing Norway/Stavanger date 20180411...
+2018-04-23 21:57:32,587 - generate_dataset - INFO - Processing Norway/Stavanger date 20180412...
+2018-04-23 21:57:45,060 - generate_dataset - INFO - Processing Norway/Stavanger date 20180413...
+2018-04-23 21:58:02,311 - generate_dataset - INFO - Processing Norway/Stavanger date 20180414...
+2018-04-23 21:58:13,252 - generate_dataset - INFO - Processing Norway/Stavanger date 20180415...
+2018-04-23 21:58:23,688 - generate_dataset - INFO - Processing Norway/Stavanger date 20180416...
+2018-04-23 21:58:34,126 - generate_dataset - INFO - Processing Norway/Stavanger date 20180417...
+2018-04-23 21:58:45,488 - generate_dataset - INFO - Processing Norway/Stavanger date 20180418...
+2018-04-23 21:58:55,904 - generate_dataset - INFO - Processing Norway/Stavanger date 20180419...
+2018-04-23 21:59:06,356 - generate_dataset - INFO - Processing Norway/Stavanger date 20180420...
+2018-04-23 21:59:17,030 - generate_dataset - INFO - Processing Norway/Stavanger date 20180421...
+2018-04-23 21:59:27,409 - generate_dataset - INFO - Processing Norway/Stavanger date 20180422...
+2018-04-23 21:59:37,850 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180409...
+2018-04-23 21:59:48,489 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180410...
+2018-04-23 21:59:59,028 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180411...
+2018-04-23 22:00:09,763 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180412...
+2018-04-23 22:00:20,507 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180413...
+2018-04-23 22:00:31,755 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180414...
+2018-04-23 22:00:47,762 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180415...
+2018-04-23 22:01:00,599 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180416...
+2018-04-23 22:01:14,392 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180417...
+2018-04-23 22:01:25,622 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180418...
+2018-04-23 22:01:37,377 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180419...
+2018-04-23 22:01:48,020 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180420...
+2018-04-23 22:01:58,770 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180421...
+2018-04-23 22:02:09,286 - generate_dataset - INFO - Processing Norway/Kristiansand date 20180422...
+2018-04-23 22:02:19,707 - generate_dataset - INFO - Processing Norway/Bergen date 20180409...
+2018-04-23 22:02:30,152 - generate_dataset - INFO - Processing Norway/Bergen date 20180410...
+2018-04-23 22:02:40,988 - generate_dataset - INFO - Processing Norway/Bergen date 20180411...
+2018-04-23 22:02:51,436 - generate_dataset - INFO - Processing Norway/Bergen date 20180412...
+2018-04-23 22:03:01,865 - generate_dataset - INFO - Processing Norway/Bergen date 20180413...
+2018-04-23 22:03:12,807 - generate_dataset - INFO - Processing Norway/Bergen date 20180414...
+2018-04-23 22:03:23,248 - generate_dataset - INFO - Processing Norway/Bergen date 20180415...
+2018-04-23 22:03:33,889 - generate_dataset - INFO - Processing Norway/Bergen date 20180416...
+2018-04-23 22:03:44,689 - generate_dataset - INFO - Processing Norway/Bergen date 20180417...
+2018-04-23 22:03:56,035 - generate_dataset - INFO - Processing Norway/Bergen date 20180418...
+2018-04-23 22:04:07,806 - generate_dataset - INFO - Processing Norway/Bergen date 20180419...
+2018-04-23 22:04:21,246 - generate_dataset - INFO - Processing Norway/Bergen date 20180420...
+2018-04-23 22:04:31,590 - generate_dataset - INFO - Processing Norway/Bergen date 20180421...
+2018-04-23 22:04:43,055 - generate_dataset - INFO - Processing Norway/Bergen date 20180422...
+2018-04-23 22:04:54,348 - generate_dataset - INFO - Processing Norway/Trondheim date 20180409...
+2018-04-23 22:04:54,781 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180409, skipping it.
+2018-04-23 22:04:54,781 - generate_dataset - INFO - Processing Norway/Trondheim date 20180410...
+2018-04-23 22:04:55,181 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180410, skipping it.
+2018-04-23 22:04:55,181 - generate_dataset - INFO - Processing Norway/Trondheim date 20180411...
+2018-04-23 22:04:55,591 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180411, skipping it.
+2018-04-23 22:04:55,592 - generate_dataset - INFO - Processing Norway/Trondheim date 20180412...
+2018-04-23 22:04:55,985 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180412, skipping it.
+2018-04-23 22:04:55,985 - generate_dataset - INFO - Processing Norway/Trondheim date 20180413...
+2018-04-23 22:04:56,384 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180413, skipping it.
+2018-04-23 22:04:56,385 - generate_dataset - INFO - Processing Norway/Trondheim date 20180414...
+2018-04-23 22:04:56,786 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180414, skipping it.
+2018-04-23 22:04:56,786 - generate_dataset - INFO - Processing Norway/Trondheim date 20180415...
+2018-04-23 22:05:00,499 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180415, skipping it.
+2018-04-23 22:05:00,499 - generate_dataset - INFO - Processing Norway/Trondheim date 20180416...
+2018-04-23 22:05:01,078 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180416, skipping it.
+2018-04-23 22:05:01,078 - generate_dataset - INFO - Processing Norway/Trondheim date 20180417...
+2018-04-23 22:05:01,688 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180417, skipping it.
+2018-04-23 22:05:01,688 - generate_dataset - INFO - Processing Norway/Trondheim date 20180418...
+2018-04-23 22:05:02,093 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180418, skipping it.
+2018-04-23 22:05:02,094 - generate_dataset - INFO - Processing Norway/Trondheim date 20180419...
+2018-04-23 22:05:02,498 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180419, skipping it.
+2018-04-23 22:05:02,498 - generate_dataset - INFO - Processing Norway/Trondheim date 20180420...
+2018-04-23 22:05:03,511 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180420, skipping it.
+2018-04-23 22:05:03,511 - generate_dataset - INFO - Processing Norway/Trondheim date 20180421...
+2018-04-23 22:05:04,313 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180421, skipping it.
+2018-04-23 22:05:04,314 - generate_dataset - INFO - Processing Norway/Trondheim date 20180422...
+2018-04-23 22:05:04,820 - generate_dataset - ERROR - Unable to query API for Norway/Trondheim date 20180422, skipping it.
+2018-04-23 22:05:04,854 - generate_dataset - DEBUG - Target o_tempm for each day of observations: {'20180418': u'14', '20180419': u'8', '20180412': u'7', '20180413': u'11', '20180410': u'6', '20180411': u'6', '20180416': u'6', '20180417': u'11', '20180414': u'10', '20180415': u'8', '20180421': u'12', '20180420': u'14'}
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180408 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180408 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180408 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180408 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 00:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 01:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 02:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 03:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 03:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 04:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,041 - generate_dataset - DEBUG - Datetime 20180409 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 05:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 06:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 07:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 08:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 09:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 10:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 12:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 13:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 14:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 15:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,042 - generate_dataset - DEBUG - Datetime 20180409 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 16:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 17:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 18:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 19:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 20:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 22:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 23:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180409 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180410 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180410 00:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180410 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180410 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,043 - generate_dataset - DEBUG - Datetime 20180410 02:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 02:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 03:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 04:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 05:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 06:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 10:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 11:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 12:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,044 - generate_dataset - DEBUG - Datetime 20180410 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 13:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 14:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 16:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 17:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 19:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 20:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 20:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 22:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 23:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,045 - generate_dataset - DEBUG - Datetime 20180410 23:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180410 23:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 00:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 01:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 01:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 01:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 02:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 02:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 02:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 03:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 04:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 04:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 06:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 08:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,046 - generate_dataset - DEBUG - Datetime 20180411 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 10:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 11:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 11:50 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 12:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 19:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 20:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,047 - generate_dataset - DEBUG - Datetime 20180411 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 23:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 23:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180411 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 00:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 01:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 01:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 02:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 04:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 05:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,048 - generate_dataset - DEBUG - Datetime 20180412 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 07:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 08:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 10:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 11:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 13:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 14:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 16:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,049 - generate_dataset - DEBUG - Datetime 20180412 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 17:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 20:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 23:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 23:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180412 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 00:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 01:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 02:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,050 - generate_dataset - DEBUG - Datetime 20180413 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 04:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 04:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 07:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 08:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 10:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 11:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 13:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,051 - generate_dataset - DEBUG - Datetime 20180413 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 17:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 19:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 20:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 22:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 23:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180413 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180414 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180414 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180414 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180414 01:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,052 - generate_dataset - DEBUG - Datetime 20180414 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 02:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 02:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 04:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 07:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 07:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 08:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 10:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 11:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,053 - generate_dataset - DEBUG - Datetime 20180414 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 16:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 17:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 19:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 20:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 22:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,054 - generate_dataset - DEBUG - Datetime 20180414 23:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180414 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180414 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 01:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 01:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 02:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 04:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 04:50 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 07:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 08:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,055 - generate_dataset - DEBUG - Datetime 20180415 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 10:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 11:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 13:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 16:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 17:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 20:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,056 - generate_dataset - DEBUG - Datetime 20180415 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 22:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 23:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180415 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 00:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 01:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 02:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 03:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 04:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 05:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 06:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,057 - generate_dataset - DEBUG - Datetime 20180416 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 08:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 10:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 11:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 13:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 13:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 15:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 17:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,058 - generate_dataset - DEBUG - Datetime 20180416 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 20:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 22:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 23:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180416 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 01:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 02:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 02:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,059 - generate_dataset - DEBUG - Datetime 20180417 04:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 05:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 08:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 10:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 11:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 13:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 13:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 13:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 14:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,060 - generate_dataset - DEBUG - Datetime 20180417 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 15:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 16:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 17:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 19:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 20:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 23:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180417 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180418 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,061 - generate_dataset - DEBUG - Datetime 20180418 00:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 01:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 02:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 03:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 04:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 10:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,062 - generate_dataset - DEBUG - Datetime 20180418 11:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 13:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 13:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 15:50 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 20:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 22:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,063 - generate_dataset - DEBUG - Datetime 20180418 22:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180418 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180418 23:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180418 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180418 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 00:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 01:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 01:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 02:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 02:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 03:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 04:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 07:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 08:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,064 - generate_dataset - DEBUG - Datetime 20180419 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 09:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 10:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 11:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 11:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 13:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 16:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 17:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 17:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 19:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,065 - generate_dataset - DEBUG - Datetime 20180419 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 20:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 20:50 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 22:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 23:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180419 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 01:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 01:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 02:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 03:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 03:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 04:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,066 - generate_dataset - DEBUG - Datetime 20180420 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 08:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 08:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 08:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 11:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 13:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 14:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,067 - generate_dataset - DEBUG - Datetime 20180420 16:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 17:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 19:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 19:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 20:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 23:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180420 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 01:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 02:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 02:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,068 - generate_dataset - DEBUG - Datetime 20180421 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 04:20 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 05:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 05:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 06:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 08:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 09:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 10:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 11:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 13:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,069 - generate_dataset - DEBUG - Datetime 20180421 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 15:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 15:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 17:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 19:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 19:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 20:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 21:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 21:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 22:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 22:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 22:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 23:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 23:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180421 23:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180422 00:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180422 00:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180422 00:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,070 - generate_dataset - DEBUG - Datetime 20180422 01:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 01:20 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 01:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 02:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 02:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 02:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 03:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 03:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 03:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 04:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 04:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 04:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 05:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 05:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 05:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 06:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 06:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 06:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 07:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 07:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 07:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 08:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 08:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 08:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 09:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 09:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 09:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 10:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 10:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 10:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 11:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 11:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,071 - generate_dataset - DEBUG - Datetime 20180422 12:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 12:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 12:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 13:00 skipped. Does not have data for all places (1 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 13:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 13:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 14:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 14:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 14:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 15:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 15:20 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 15:50 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 16:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 16:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 16:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 17:00 skipped. Does not have data for all places (2 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 17:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 17:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 18:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 18:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 18:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 19:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 19:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 20:00 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 20:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 20:50 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 21:00 skipped. Does not have data for all places (3 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 21:20 skipped. Does not have data for all places (4 out of 5).
+2018-04-23 22:05:05,072 - generate_dataset - DEBUG - Datetime 20180422 21:50 skipped. Does not have data for all places (4 out of 5).
