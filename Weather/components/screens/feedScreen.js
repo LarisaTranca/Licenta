@@ -12,6 +12,7 @@ class Feed extends React.Component {
         this.props.data.refetch();
     }
     renderData() {
+
         // if (this.props.data.loading) {
             return <ActivityIndicator/>
         // } else if(this.props.data.allPosts.nodes.length === 0){

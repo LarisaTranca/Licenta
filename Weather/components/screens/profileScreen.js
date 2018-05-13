@@ -16,6 +16,10 @@ export default class Profile extends Component {
     user: undefined, // user has not logged in yet
   };
 
+constructor(props){
+  super(props);
+  (this: any).loginWithApp = this.loginWithApp.bind(this);
+}
   // Set up Linking
   componentDidMount() {
     // Add event listener to handle OAuthLogin:// URLs
@@ -34,7 +38,6 @@ export default class Profile extends Component {
   };
 
   handleOpenURL = ({ url }) => {
-    // Extract stringified user string out of the URL
     const [, user_string] = url.match(/user=([^#]+)/);
     this.setState({
       // Decode the user string and parse it into JSON
@@ -51,6 +54,41 @@ export default class Profile extends Component {
   // Handle Login with Google button tap
   loginWithGoogle = () => this.openURL('https://e53e164f.ngrok.io/auth/google');
 
+  loginWithApp(){
+    this.props.navigator.push({
+      screen: 'LoginScreen', // unique ID registered with Navigation.registerScreen
+  title: 'Login in' , // navigation bar title of the pushed screen (optional)
+  subtitle: undefined, // navigation bar subtitle of the pushed screen (optional)
+  titleImage: require('../img/sun.gif'), // iOS only. navigation bar title image instead of the title text of the pushed screen (optional)
+  passProps: {}, // Object that will be passed as props to the pushed screen (optional)
+  animated: true, // does the push have transition animation or does it happen immediately (optional)
+  animationType: 'fade', // 'fade' (for both) / 'slide-horizontal' (for android) does the push have different transition animation (optional)
+  backButtonTitle: undefined, // override the back button title (optional)
+  backButtonHidden: false, // hide the back button altogether (optional)
+  navigatorStyle: {
+          navBarButtonColor: '#859cc1',navBarHeight: 50,
+          navBarTextColor: '#000000',
+          navigationBarColor: '#003a66',
+          navBarBackgroundColor: '#003a66',
+          statusBarColor: '#002b4c',
+          tabFontFamily: 'BioRhyme-Bold',
+          drawUnderTabBar: true,
+          topBarCollapseOnScroll: true,
+navBarTextColor: '#859cc1',
+},// override the navigator style for the pushed screen (optional)
+  navigatorButtons: {}, // override the nav buttons for the pushed screen (optional)
+  // enable peek and pop - commited screen will have `isPreview` prop set as true.
+  previewView: undefined, // react ref or node id (optional)
+  previewHeight: undefined, // set preview height, defaults to full height (optional)
+  previewCommit: true, // commit to push preview controller to the navigation stack (optional)
+  previewActions: [{ // action presses can be detected with the `PreviewActionPress` event on the commited screen.
+    id: '', // action id (required)
+    title: '', // action title (required)
+    style: undefined, // 'selected' or 'destructive' (optional)
+    actions: [], // list of sub-actions
+  }],
+    })
+  }
   // Open URL in a browser
   openURL = (url) => {
     // Use SafariView on iOS
@@ -95,12 +133,22 @@ export default class Profile extends Component {
             </View>
         }
         {/* Login buttons */}
+
+        <View style={styles.button}>
+          <Icon.Button
+          name="cloud"
+          backgroundColor="#859cc1"
+          onPress={this.loginWithApp}
+          {...iconStyles}
+        >
+        Weather Prediction
+        </Icon.Button>
+        </View>
         <View style={styles.buttons}>
           <Icon.Button
             name="facebook"
             backgroundColor="#3b5998"
             onPress={this.loginWithFacebook}
-            {...iconStyles}
           >
             Login with Facebook
           </Icon.Button>
@@ -155,6 +203,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     margin: 20,
+    marginBottom: 30,
+  },
+  button: {
+    flexDirection: 'row',
+    marginLeft: 100,
     marginBottom: 30,
   },
 });

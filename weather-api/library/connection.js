@@ -1,11 +1,8 @@
-var db = {
-    user: 'rootuser',
-    password: 'overdrive1!',
-    server: 'weather-ml.database.windows.net',
+const settings = {
+    host: 'weather-ml.database.windows.net',
     database: 'weather',
-    options: {
-        encrypt: 'true'
-    }
-}
-
-module.exports = db;
+    user: 'rootuser',
+    password: 'overdrive1!'
+};
+const connection = require('node-querybuilder').QueryBuilder(settings, 'sql', 'single');
+module.exports = connection;
