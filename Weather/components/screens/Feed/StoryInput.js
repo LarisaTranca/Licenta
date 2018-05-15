@@ -80,17 +80,17 @@ export default class StoryInput extends React.Component {
                 };
 
                 // or a reference to the platform specific asset location
-                // if (Platform.OS === 'ios') {
-                //     const source = {
-                //         uri: response.uri.replace('file://', ''),
-                //         isStatic: true
-                //     };
-                // } else {
-                //     const source = {
-                //         uri: response.uri,
-                //         isStatic: true
-                //     };
-                // }
+                if (Platform.OS === 'ios') {
+                    const source = {
+                        uri: response.uri.replace('file://', ''),
+                        isStatic: true
+                    };
+                } else {
+                    const source = {
+                        uri: response.uri,
+                        isStatic: true
+                    };
+                }
 
                 this.setState({avatarSource: source, data: response.data});
             }
@@ -99,13 +99,13 @@ export default class StoryInput extends React.Component {
         });
     }
     onSubmit() {
-        this.props.submit({body: this.state.textValue, image: this.state.data}).then(({data}) => {
-            console.log('got data', data);
-            this.props.onRefreshClicked()
-            this.setState({textValue: '', avatarSource: defaultAvatar, data: undefined})
-        }).catch((error) => {
-            console.log('there was an error sending the query', error);
-        });
+        // this.props.submit({body: this.state.textValue, image: this.state.data}).then(({data}) => {
+        //     console.log('got data', data);
+        //     this.props.onRefreshClicked()
+        //     this.setState({textValue: '', avatarSource: defaultAvatar, data: undefined})
+        // }).catch((error) => {
+        //     console.log('there was an error sending the query', error);
+        // });
     }
     handleTextChange(textValue) {
         this.setState({textValue})

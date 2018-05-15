@@ -1,20 +1,23 @@
 
 import React from 'react';
 import {StyleSheet, View, Text, ScrollView, TouchableOpacity} from 'react-native';
-export default class CollapsingHeader extends React.Component {
-  render(){
-    return(
+import Icon from 'react-native-vector-icons/Ionicons';
+const CustomButton = props => {
+  const {navigator} = props;
+  return(
         <TouchableOpacity
-    style={[styles.button, { backgroundColor: 'tomato' }]}
-    onPress={() => console.log('pressed me!')}
+    style={[styles.button]}
+    onPress={() => navigator.toggleDrawer({
+        side: 'left',
+        animated: true
+    })}
   >
     <View style={styles.button}>
+    <Icon name="ios-menu" size={30} color="#fff" />
     </View>
   </TouchableOpacity>
 );
 }
-}
-
 const styles = StyleSheet.create({
 button: {
   overflow: 'hidden',
@@ -25,3 +28,4 @@ button: {
   alignItems: 'center',
 },
 });
+export default CustomButton;

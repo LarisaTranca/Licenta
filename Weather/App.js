@@ -25,6 +25,7 @@ import Icon2 from 'react-native-vector-icons/Entypo';
 import Icon3 from 'react-native-vector-icons/FontAwesome';
 import Main from './components/screens/mainScreen';
 import Locations from './components/screens/locationsScreen';
+import CustomButton from './components/transitions/CustomButton';
 const deviceW = Dimensions.get('window').width
 const basePx = 375
 function px2dp(px) {
@@ -58,27 +59,27 @@ Navigation.startTabBasedApp({
       label: 'Home',
       screen: 'mainScreen', // this is a registered name for a screen
       icon: icons.home,
-      selectedIcon: require('./components/img/clouds.jpg'), // iOS only
-      title: 'Weather',
+      // selectedIcon: require('./components/img/clouds.jpg'), // iOS only
+      title: 'Weather'
     },
     {
       label: 'Locations',
       screen: 'locationsScreen',
       icon: icons.location,
-      selectedIcon: require('./components/img/clouds.jpg'), // iOS only
+      // selectedIcon: require('./components/img/clouds.jpg'), // iOS only
       title: 'Locations'
     },{
       label: 'Profile',
       screen: 'profileScreen',
       icon: icons.user,
-      selectedIcon: require('./components/img/clouds.jpg'), // iOS only
+      // selectedIcon: require('./components/img/clouds.jpg'), // iOS only
       title: 'Profile'
     },
     {
       label: 'News Feed',
       screen: 'feedScreen',
       icon: icons.feed,
-      selectedIcon: require('./components/img/clouds.jpg'), // iOS only
+      // selectedIcon: require('./components/img/clouds.jpg'), // iOS only
       title: 'News Feed'
     }
   ],
@@ -86,23 +87,21 @@ Navigation.startTabBasedApp({
     orientation: 'portrait', // Sets a specific orientation to the entire app. Default: 'auto'. Supported values: 'auto', 'landscape', 'portrait'
     bottomTabBadgeTextColor: 'red', // Optional, change badge text color. Android only
     bottomTabBadgeBackgroundColor: 'green', // Optional, change badge background color. Android only
-      tabBarSelectedButtonColor: '#551A8B',
-      tabBarBackgroundColor: '#fff',
-      navBarHeight: 50,
-      navBarBackgroundColor: '#fff',
-      navBarTextColor: '#000000',
-    //backButtonImage: require('./pathToImage.png') // Change the back button default arrow image with provided image. iOS only
-    hideBackButtonTitle: true/false // Hide back button title. Default is false. If `backButtonTitle` provided so it will take into account and the `backButtonTitle` value will show. iOS only
+      navBarHeight: 60,
+      navBarBackgroundColor: '#002b4c',
+      navBarTextColor: '#fff',
+    backButtonImage: require('./components/img/left-arrow.png'), // Change the back button default arrow image with provided image. iOS only
+    hideBackButtonTitle: false // Hide back button title. Default is false. If `backButtonTitle` provided so it will take into account and the `backButtonTitle` value will show. iOS only
   },
   tabsStyle: { // optional, add this if you want to style the tab bar beyond the defaults
-    tabBarButtonColor: '#ffff00', // optional, change the color of the tab icons and text (also unselected). On Android, add this to appStyle
-    tabBarSelectedButtonColor: '#ff9900', // optional, change the color of the selected tab icon and text (only selected). On Android, add this to appStyle
-    tabBarBackgroundColor: '#551A8B', // optional, change the background color of the tab bar
-    initialTabIndex: 1, // optional, the default selected bottom tab. Default: 0. On Android, add this to appStyle
+    tabBarButtonColor: '#859cc1', // optional, change the color of the tab icons and text (also unselected). On Android, add this to appStyle
+    tabBarSelectedButtonColor: '#ff505c', // optional, change the color of the selected tab icon and text (only selected). On Android, add this to appStyle
+    tabBarBackgroundColor: '#002b4c', // optional, change the background color of the tab bar
+    initialTabIndex: 0, // optional, the default selected bottom tab. Default: 0. On Android, add this to appStyle
   },
   drawer: { // optional, add this if you want a side menu drawer in your app
     left: { // optional, define if you want a drawer from the left
-      screen: 'example.FirstTabScreen', // unique ID registered with Navigation.registerScreen
+      screen: 'Menu', // unique ID registered with Navigation.registerScreen
       passProps: {}, // simple serializable object that will pass as props to all top screens (optional),
       fixedWidth: 500, // a fixed width you want your left drawer to have (optional)
     },

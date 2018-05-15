@@ -5,6 +5,24 @@ import { List, ListItem, ListView } from 'react-native-elements'
 import Wallpaper from '../Wallpaper';
 import Icon from "react-native-vector-icons/MaterialIcons";
 export default class Locations extends React.Component {
+  constructor(props: Props) {
+    super(props);
+    this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
+  }
+    navigatorButtons = (navigator) => {
+    return {
+      leftButtons: [
+        {
+          id: 'custom-button',
+          component: 'CustomButton',
+          passProps: {
+            text: 'Hi!',
+            navigator
+          }
+        }
+      ]
+    };
+  }
   render () {
     var items = ['Simon Mignolet','Nathaniel Clyne','Dejan Lovren','Mama Sakho','Emre Can'];
     return (

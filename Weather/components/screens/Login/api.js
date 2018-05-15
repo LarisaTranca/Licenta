@@ -1,16 +1,15 @@
+var url = 'https://weather-predict.azurewebsites.net/';
+
 var api = {
-    getResource(term){
-      // url = 'http://api.wunderground.com/api/7371ed5d87903525/geolookup/hourly/q/'+ term[1]+','+term[0]+'.json';
-      // let response =  fetch(url);
-      // return response.then((response) => response.json());
-return fetch('http://api.wunderground.com/api/7371ed5d87903525/geolookup/hourly/q/'+ term[1]+','+term[0]+'.json')
-      .then((response) => response.json())
-    .then((responseJson) => {
-      return responseJson;
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+    getUser(id){
+    return fetch(url + 'users/user?id='+ id)
+        .then((response) => response.json())
+      .then((responseJson) => {
+        return responseJson;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   },
   postResource(params){
     return postAuth(params);
@@ -18,28 +17,18 @@ return fetch('http://api.wunderground.com/api/7371ed5d87903525/geolookup/hourly/
   createAccount(params){
     return postCreate(params);
   },
-  addResource(params){
-    setResource(params);
-    async function setResource(params){
-      console.log(params);
-      try{
-      let response = await fetch('https://0c81bb1d.ngrok.io/add-resource', {
-          method: 'POST',
-          headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(params)
-      });
-      let responseJson = await response.json();
-      console.log(responseJson);
-      return responseJson.message;
-      }
-      catch(error){
-        console.error(error);
-      }
-    }
-    },
+  updateUser(params){
+    return updateUserInfo(params);
+  },
+  deleteUser(params){
+    return deleteUser(params);
+  },
+  auth(params){
+    return authentification(params);
+  },
+  sendmail(params){
+    return sendMail(params);
+  }
 };
 
 async function postAuth(params){
@@ -62,7 +51,7 @@ async function postAuth(params){
 
 async function postCreate(params){
   try{
-  let response = await fetch('https://0c81bb1d.ngrok.io/create-account', {
+  let response = await fetch(url + 'users', {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
@@ -78,5 +67,63 @@ async function postCreate(params){
   }
 }
 
+async function updateUserInfo(params){
+    try{
+  let response = await fetch(url + 'users', {
+      method: 'PUT',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(params)
+  });
+  let responseJson = await response.json();
+  return responseJson.message;
+  }
+  catch(error){
+    console.error(error);
+  }
+}
+
+async function deleteUser(params){
+    try{
+  let response = await fetch(url + 'users', {
+      method: 'DELETE',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(params)
+  });
+  let responseJson = await response.json();
+  return responseJson.message;
+  }
+  catch(error){
+    console.error(error);
+  }
+}
+
+async function authentification(params){
+  return fetch(url + 'users/auth?email='+ params.email + '&password=' + params.password)
+        .then((response) => response.json())
+      .then((responseJson) => {
+        return responseJson;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+}
+
+async function sendMail(params){
+  var link = params.forgot ? url + 'users/send?to='+ params.to + '&forgot=' + params.forgot : url + 'users/send?to='+ params.to;
+  return fetch(link)
+        .then((response) => response.json())
+      .then((responseJson) => {
+        return responseJson;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+}
 
 module.exports = api;

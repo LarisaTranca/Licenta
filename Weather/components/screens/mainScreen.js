@@ -17,7 +17,7 @@ const getLeftButtonsForAlarmList = () => {
 class Main extends React.Component {
   constructor(props: Props) {
     super(props);
-
+    this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
     this.state = {
         selectedTab: 'home',
         initialPosition: 'unknown',
@@ -25,6 +25,22 @@ class Main extends React.Component {
         cityName: 'unknown'
     };
   }
+
+  navigatorButtons = (navigator) => {
+    return {
+      leftButtons: [
+        {
+          id: 'custom-button',
+          component: 'CustomButton',
+          passProps: {
+            text: 'Hi!',
+            navigator
+          }
+        }
+      ]
+    };
+  }
+
   componentDidMount = () => {
 
      navigator.geolocation.getCurrentPosition(

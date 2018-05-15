@@ -6,8 +6,23 @@ import Story from './Feed/Story';
 
 class Feed extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
     }
+    navigatorButtons = (navigator) => {
+    return {
+      leftButtons: [
+        {
+          id: 'custom-button',
+          component: 'CustomButton',
+          passProps: {
+            text: 'Hi!',
+            navigator
+          }
+        }
+      ]
+    };
+  }
     onRefreshClicked() {
         this.props.data.refetch();
     }

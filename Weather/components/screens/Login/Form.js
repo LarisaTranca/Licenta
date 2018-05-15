@@ -9,7 +9,6 @@ import {
 	Image,
 	Keyboard,
 } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 
 import UserInput from './UserInput';
 import ButtonSubmit from './ButtonSubmit';
