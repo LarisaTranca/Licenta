@@ -10,6 +10,7 @@ import {
 	Animated,
 	Easing,
 	Keyboard,
+	ScrollView
 } from 'react-native';
 import api from './api.js';
 import { Actions, ActionConst } from 'react-native-router-flux';
@@ -17,10 +18,10 @@ import UserInput from './UserInput';
 import SubmitCreateAccount from './SubmitCreateAccount';
 import SignupSection from './SignupSection';
 
-import usernameImg from '../images/username.png';
-import passwordImg from '../images/password.png';
-import eyeImg  from '../images/eye_black.png';
-import arrowImg from '../images/left-arrow.png';
+import usernameImg from '../../img/username.png';
+import passwordImg from '../../img/password.png';
+import eyeImg  from '../../img/eye_black.png';
+import arrowImg from '../../img/left-arrow.png';
 const SIZE = 40;
 export default class AccountForm extends Component {
 	constructor(props) {
@@ -31,7 +32,7 @@ export default class AccountForm extends Component {
 			press: false,
 			pressConfirm:false,
 			isLoading: false,
-			visibleHeight: Dimensions.get('window').height -450
+			visibleHeight: Dimensions.get('window').height -650
 		};
 		this.showPass = this.showPass.bind(this);
 		this.showConfirmPass = this.showConfirmPass.bind(this);
@@ -57,9 +58,21 @@ export default class AccountForm extends Component {
 
 	render() {
 		return (
-			<View style={{height: this.state.visibleHeight}}>
+			<ScrollView style={{height: this.state.visibleHeight}}>
 				<KeyboardAvoidingView behavior='padding'
 					style={styles.container}>
+					<UserInput source={usernameImg}
+						placeholder='First Name'
+						autoCapitalize={'none'}
+						returnKeyType={'done'}
+						autoCorrect={false}
+						onChangeText={(text) => this.setState({first_name: text})}/>
+					<UserInput source={usernameImg}
+						placeholder='Last Name'
+						autoCapitalize={'none'}
+						returnKeyType={'done'}
+						autoCorrect={false}
+						onChangeText={(text) => this.setState({last_name: text})}/>
 					<UserInput source={usernameImg}
 						placeholder='Email'
 						autoCapitalize={'none'}
@@ -94,9 +107,9 @@ export default class AccountForm extends Component {
 	            >
 	              <Image source={eyeImg} style={styles.iconEye} />
 	            </TouchableOpacity>
-							<SubmitCreateAccount email={this.state.email} password={this.state.password} confirmPassword={this.state.confirmPassword}/>
+							<SubmitCreateAccount navigator={this.props} email={this.state.email} password={this.state.password} confirmPassword={this.state.confirmPassword} first_name={this.state.first_name} last_name={this.state.last_name}/>
 				</KeyboardAvoidingView>
-			</View>
+			</ScrollView>
 		);
 	}
 }
@@ -107,18 +120,18 @@ const DEVICE_HEIGHT = Dimensions.get('window').height;
 const styles = StyleSheet.create({
 	container: {
 		flex: 2,
-		margin: -20,
+		marginBottom: 20,
 		alignItems: 'center',
 	},
 	btnEye: {
     position: 'absolute',
-		top: 60,
-		right: 48,
+		top: 190,
+		right: 28,
   },
 	btnEyeConfirm: {
 		position: 'absolute',
-		top: 100,
-		right: 48,
+		top: 250,
+		right: 28,
 	},
   iconEye: {
     width: 25,

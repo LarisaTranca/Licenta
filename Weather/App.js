@@ -15,7 +15,8 @@ import {
   Dimensions,
   Animated,
   ActivityIndicator,
-  Image
+  Image,
+  AsyncStorage
 } from 'react-native';
 import { registerScreens } from './screens';
 
@@ -26,7 +27,8 @@ import Icon3 from 'react-native-vector-icons/FontAwesome';
 import Main from './components/screens/mainScreen';
 import Locations from './components/screens/locationsScreen';
 import CustomButton from './components/transitions/CustomButton';
-const deviceW = Dimensions.get('window').width
+const deviceW = Dimensions.get('window').width;
+import api from './components/screens/Login/api';
 const basePx = 375
 function px2dp(px) {
   return px *  deviceW / basePx
@@ -52,6 +54,12 @@ async function prepareIcons() {
 }
 async function startApp() {
   const icons = await prepareIcons();
+  AsyncStorage.getItem('userInfo').then((data)=>{
+    var userInfo, listData;
+    if(data){
+      userInfo = data;
+    }
+      var user_id = JSON.parse(data).id;
   if(Platform.OS === 'ios'){
 Navigation.startTabBasedApp({
   tabs: [
@@ -121,6 +129,9 @@ Navigation.startTabBasedApp({
     animationType: 'door', //optional, iOS only, for MMDrawer: 'door', 'parallax', 'slide', 'slide-and-scale'
                                         // for TheSideBar: 'airbnb', 'facebook', 'luvocracy','wunder-list'
     disableOpenGesture: false // optional, can the drawer be opened with a swipe instead of button
+  },
+  passProps: {
+    userInfo: userInfo,
   }
 });
 }else{
@@ -209,10 +220,13 @@ Navigation.startTabBasedApp({
     // for TheSideBar: 'airbnb', 'facebook', 'luvocracy','wunder-list'
     disableOpenGesture: false // optional, can the drawer, both right and left, be opened with a swipe instead of button
   },
-  passProps: {}, // simple serializable object that will pass as props to all top screens (optional)
+  passProps: {
+    userInfo: userInfo,
+  }, // simple serializable object that will pass as props to all top screens (optional)
   animationType: 'slide-down' // optional, add transition animation to root change: 'none', 'slide-down', 'fade'
 });
 }
+      });
 }
 startApp();
 AppRegistry.registerComponent('App', () => App);

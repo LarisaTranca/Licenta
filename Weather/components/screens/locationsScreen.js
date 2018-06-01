@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
-import { View, ActivityIndicator, StyleSheet, Animated, Dimensions, Image, Title, Subtitle, ImageBackground} from 'react-native';
+import { View, ActivityIndicator, StyleSheet, Animated, Dimensions, Image, Title, Subtitle, ImageBackground, FlatList,   TouchableHighlight,
+  TouchableNativeFeedback, Button} from 'react-native';
 import { Container, Header, Content, Text } from 'native-base';
 import { List, ListItem, ListView } from 'react-native-elements'
 import Wallpaper from '../Wallpaper';
-import Icon from "react-native-vector-icons/MaterialIcons";
+import * as css from "../transitions/Styles";
+// import {listData} from "../transitions/Data";
+import {Icon} from "react-native-elements";
+import Icon2 from 'react-native-vector-icons/Ionicons';
+import RNGooglePlaces from 'react-native-google-places';
+import api from './Login/api';
+import Location from '../transitions/Location';
 export default class Locations extends React.Component {
-  constructor(props: Props) {
+  constructor(props) {
     super(props);
+    this.state={
+      time:'',
+      listData: []
+    }
     this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
+    this.onPress = this.onPress.bind(this);
+    // this.getTime = this.getTime.bind(this);
   }
     navigatorButtons = (navigator) => {
     return {
@@ -23,17 +36,57 @@ export default class Locations extends React.Component {
       ]
     };
   }
+  componentDidMount(){
+    var user_id = JSON.parse(this.props.userInfo).id;
+    api.locations({'user_id': user_id}).then(function(result){
+      this.setState({listData:result.locations});
+    }.bind(this));
+  }
+  componentWillReceiveProps(nextProps){
+    // console.log(nextProps);
+  }
+  onPress(){
+    RNGooglePlaces.openAutocompleteModal()
+    .then((place) => {
+
+    var user_id = JSON.parse(this.props.userInfo).id;
+    var data = {
+      user_id: user_id,
+      location: JSON.stringify(place),
+      temperature: 20,
+      unit: 'C'
+    };
+    api.locationAdd(data).then(function(result){
+      api.locations({'user_id': user_id}).then(function(result){
+        this.setState({listData:result.locations});
+      }.bind(this));
+    }.bind(this));
+    // place represents user's selection from the
+    // suggestions and it is a simplified Google Place object.
+    })
+    .catch(error => console.log(error.message));  // error is a Javascript Error object
+  }
+
+  renderRow =(item) => (
+    <Location {...item}/>
+  );
   render () {
-    var items = ['Simon Mignolet','Nathaniel Clyne','Dejan Lovren','Mama Sakho','Emre Can'];
     return (
-      <List>
-     <ListItem
-       title='Timisoara'
-       switche
-       switchOnTintColor="blue"
-       avatar={require('../img/sun.gif')}
-     />
-   </List>
+     <View style={css.home_screen.v_container}>
+      <FlatList
+          style={css.home_screen_list.container}
+          data={this.state.listData}
+          renderItem={this.renderRow}
+        />
+        <View style={styles.container}>
+        <TouchableHighlight
+         style={styles.button}
+         onPress={this.onPress}
+        >
+         <Icon2 name='md-add' size={20} style={styles.icon}/>
+        </TouchableHighlight>
+        </View>
+        </View>
    );
   }
 }
@@ -50,43 +103,25 @@ styles = StyleSheet.create({
   ratingText: {
     paddingLeft: 10,
     color: 'grey'
+  },
+  icon:{
+    fontSize: 26,
+    color: 'white'
+  },
+button: {
+  borderWidth:1,
+       borderColor:'rgba(0,0,0,0.2)',
+       alignItems:'center',
+       flexDirection: 'row',
+       justifyContent:'center',
+       marginRight: 10,
+       width:60,
+       height:60,
+       backgroundColor:'rgba(111, 202, 186, 1)',
+       borderRadius:100,
+  },
+  container:{
+    flex:0,
+    alignSelf: 'flex-end',
   }
 })
-// const styles = StyleSheet.create ({
-//    item:{
-//      marginLeft: 0,
-//      fontFamily: "AppleBraille-Outline8Dot",
-//    },
-//    item2:{
-//     fontFamily: "AppleBraille-Outline8Dot",
-//      flex: 1,
-//      textAlign: 'right',
-//    },
-//    list:{
-//      width: 132.48,
-//     height: 67.32
-//    },
-//    container: {
-//    width: 80.38,
-//    height: 18.99,
-//       flex: 1,
-//       marginTop: 50
-//    },
-//    boldText: {
-//       fontSize: 30,
-//       color: 'red',
-//    },
-//    picture: {
-//  		flex: 1,
-//  		width: null,
-//  		height: null,
-//  		resizeMode: 'cover',
-//  	},
-//   icon1: {
-//     backgroundColor: "transparent",
-//     // top: 45.97,
-//     // left: 340.75,
-//     color: "grey",
-//     textAlign: 'right',
-//   }
-// })

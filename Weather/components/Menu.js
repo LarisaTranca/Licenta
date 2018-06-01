@@ -7,25 +7,68 @@ import { Actions, ActionConst } from 'react-native-router-flux';
 const menuList = require('./Constants.js');
 
 export default class Menu extends Component {
-
-    _onPress() {
-      Actions.loginScreen({prop:''});
+  constructor(props){
+    super(props);
+    this._onPressSettings = this._onPressSettings.bind(this);
+  }
+    _onPressSettings() {
+               this.props.navigator.showModal({
+      screen: 'Settings',
+      title: 'Settings',
+      overrideBackPress: true,
+      navigatorStyle: {
+          navBarButtonColor: '#859cc1',
+          navBarHeight: 50,
+          navBarTextColor: '#000000',
+          navigationBarColor: '#003a66',
+          navBarBackgroundColor: '#003a66',
+          statusBarColor: '#002b4c',
+          tabFontFamily: 'BioRhyme-Bold',
+          drawUnderTabBar: true,
+          topBarCollapseOnScroll: true,
+          navBarTextColor: '#859cc1',
+          },
+          passProps:{
+          },
+      navigatorButtons:{
+        leftButtons: [
+        {
+          id: 'backWithCheck',
+          component: 'backButton',
+          passProps: {
+            text: 'Hi!',
+            navigator,
+            onDone: ()=>{
+              this.props.navigator.dismissModal({
+                animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+              });
+              this.props.navigator.switchToTab({
+                tabIndex: 0 // (optional) if missing, this screen's tab will become selected
+              });
+              this.props.navigator.toggleDrawer({
+  side: 'left', // the side of the drawer since you can have two, 'left' / 'right'
+  animated: true, // does the toggle have transition animation or does it happen immediately (optional)
+  to: 'close' // optional, 'open' = open the drawer, 'closed' = close it, missing = the opposite of current state
+});
+            }
+          }
+        }
+      ]
+        }});
     };
   render() {
+    var settings = require('./img/settings.png');
     return (
       <View style={{ flex:1, backgroundColor: 'rgba(255, 255, 255, 0.4)'}}>
       <Wallpaper>
         <Logo/>
         <ScrollView>
-            {menuList.MENU_LIST.map(item => (
               <TouchableOpacity
-                key={item.index}
-                onPress={this._onPress}
+                onPress={this._onPressSettings}
               >
-                <Image source={item.image} style={styles.inlineIcon} />
-                <Text style={{color: 'white', fontSize: 16, paddingLeft: 40, paddingTop: 16}}>{item.name}</Text>
+                <Image source={settings} style={styles.inlineIcon} />
+                <Text style={{color: 'white', fontSize: 16, paddingLeft: 40, paddingTop: 16}}>Settings</Text>
               </TouchableOpacity>
-            ))}
           </ScrollView>
       </Wallpaper>
       </View>

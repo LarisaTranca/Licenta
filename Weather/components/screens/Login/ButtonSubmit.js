@@ -20,13 +20,15 @@ const DEVICE_HEIGHT = Dimensions.get('window').height;
 const MARGIN = 40;
 
 export default class SubmitCreateAccount extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
+		console.log(props);
 
 		this.state = {
 			isLoading: false,
 			username: '',
-			password: ''
+			password: '',
+			props: props
 		};
 
 		this.buttonAnimated = new Animated.Value(0);
@@ -39,31 +41,35 @@ export default class SubmitCreateAccount extends Component {
 		// var crypto = require('crypto')
 		// var hashedPass = crypto.createHash('sha1').update(this.props.password).digest('hex')
 		// console.log({username: this.props.username, password:hashedPass});
-		// if (this.state.isLoading) return;
-		// this.setState({ isLoading: true });
-		// Animated.timing(
-		// 	this.buttonAnimated,
-		// 	{
-		// 		toValue: 1,
-		// 		duration: 200,
-		// 		easing: Easing.linear
-		// 	}
-		// ).start();
-		// var res = api.postResource({username: this.props.username, password:hashedPass}).then(function(res){
-		// 	console.log(res);
-		// 	if(res === "ok"){
-		// 		setTimeout(() => {
-		// 			Actions.mapScreen();
-		// 			// this.setState({ isLoading: false });
-		// 			// this.buttonAnimated.setValue(0);
-		// 			}, 2300);
-		// 	}else{
-		// 		setTimeout(() => {
-		// 		// this.setState({ isLoading: false });
-		// 		// this.buttonAnimated.setValue(0);
-		// 		}, 2300);
-		// 	}
-		// });
+		if (this.state.isLoading) return;
+		this.setState({ isLoading: true });
+		Animated.timing(
+			this.buttonAnimated,
+			{
+				toValue: 1,
+				duration: 200,
+				easing: Easing.linear
+			}
+		).start();
+		var res = api.auth({email: this.props.username, password:this.props.password}).then(function(res){
+			// console.log(this);
+			if(res.found === 1){
+
+				// console.log(this.state);
+				setTimeout(() => {
+					// console.log(this.props.navigator);
+					this.props.navigator.navigator.onDone(res.data);
+				// 	// Actions.mapScreen();
+				// 	// this.setState({ isLoading: false });
+				// 	// this.buttonAnimated.setValue(0);
+					}, 1300);
+			}else{
+				setTimeout(() => {
+				this.setState({ isLoading: false });
+				this.buttonAnimated.setValue(0);
+				}, 2300);
+			}
+		}.bind(this));
 
 	}
 

@@ -5,12 +5,27 @@ import {
   StyleSheet,
   Platform,
   Text,
-  View
+  View,
+  AsyncStorage,
+  ScrollView,
+  ListView,
+  ImageBackground,
+  TouchableOpacity,
+  TextInput
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { Card, Icon } from 'react-native-elements'
+import Icon2 from 'react-native-vector-icons/FontAwesome';
 import SafariView from 'react-native-safari-view';
 import { Navigation } from 'react-native-navigation';
-
+import username from '../img/profile.png';
+import header from '../img/blur.jpg'
+var base64 = require('base-64');
+import api from './Login/api';
+import Separator from '../transitions/Separator';
+import Tel from '../transitions/Tel';
+import Email from '../transitions/Email';
+import mainColor from '../transitions/constants'
+import ImagePicker from 'react-native-image-picker';
 export default class Profile extends Component {
 
   state = {
@@ -19,11 +34,66 @@ export default class Profile extends Component {
 
 constructor(props){
   super(props);
+    tels = [
+    { "id": 1, "name": "Mobile", "number": "+66 (089)-928-2134" },
+    { "id": 2, "name": "Work", "number": "+41 (112)-435-9887" }
+  ];
+
+  emails = [
+    { "id": 1, "name": "Personal", "email": "elsie-goodman@mail.com" },
+    { "id": 2, "name": "Work", "email": "elsie@work.com" }
+  ];
+  this.state ={
+    'userInfo': '',
+    edit: false, 
+    telDS: new ListView.DataSource({
+      rowHasChanged: (r1, r2) => r1 !== r2,
+    }).cloneWithRows(tels),
+    emailDS: new ListView.DataSource({
+      rowHasChanged: (r1, r2) => r1 !== r2,
+    }).cloneWithRows(emails),
+    avatarSource: username,
+    dataPhoto: undefined,
+    user: {}
+  };
    this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
    this.props.navigator.setOnNavigatorEvent(this.onNavigationEvent.bind(this));
+   this.editProfile = this.editProfile.bind(this);
+   this.save = this.save.bind(this);
   // (this: any).loginWithApp = this.loginWithApp.bind(this);
 }
   navigatorButtons = (navigator) => {
+    var user = this.state.userInfo;
+    if(user !== ''){
+      return {
+        rightButtons: [
+        {
+          id: 'cancel',
+          title: 'Log Out',
+          component: 'logOut',
+          passProps: {
+            text: 'Hi!',
+            navigator,
+            logOut: ()=>{
+              AsyncStorage.setItem('userInfo', '', ()=>{
+                console.log("log out");
+              });
+            }
+          }
+        }
+      ], 
+      leftButtons: [
+        {
+          id: 'custom-button',
+          component: 'CustomButton',
+          passProps: {
+            text: 'Hi!',
+            navigator
+          }
+        }
+      ]
+      }
+    }else{
     return {
       leftButtons: [
         {
@@ -37,27 +107,100 @@ constructor(props){
       ]
     };
   }
+  }
   onNavigationEvent(event) {
 // handle a deep link
-    console.log(event);
-    if (event.id == 'push') {
-      const parts = event.link;
-      this.loginWithApp();
-      // if (parts == 'Screen1') {
-      //   this.onPressScreen1();
-      // }
+    if (event.type == 'DeepLink') {
+      if(event.link == 'create'){
+
+      this.props.navigator.showModal({
+      screen: 'createAccount',
+      title: 'Create Account',
+      overrideBackPress: true,
+      navigatorStyle: {
+          navBarButtonColor: '#859cc1',
+          navBarHeight: 50,
+          navBarTextColor: '#000000',
+          navigationBarColor: '#003a66',
+          navBarBackgroundColor: '#003a66',
+          statusBarColor: '#002b4c',
+          tabFontFamily: 'BioRhyme-Bold',
+          drawUnderTabBar: true,
+          topBarCollapseOnScroll: true,
+          navBarTextColor: '#859cc1',
+          },
+          passProps:{
+            onDone: (data) =>{
+              this.props.navigator.dismissAllModals({
+                animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+              });
+              this.props.navigator.handleDeepLink({
+                link: 'logged-in',
+                payload: data // (optional) Extra payload with deep link
+              });
+
+              // this.props.navigator.setButtons(this.navigatorRightButtons(this.props.navigator));
+            }
+          },
+      navigatorButtons:{
+        leftButtons: [
+        {
+          id: 'backWithCheck',
+          component: 'backButton',
+          passProps: {
+            text: 'Hi!',
+            navigator,
+            onDone: ()=>{
+
+              this.props.navigator.dismissModal({
+                animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+              });
+              this.props.navigator.switchToTab({
+                tabIndex: 2 // (optional) if missing, this screen's tab will become selected
+              });
+            }
+          }
+        }
+      ]
+        }});
+
+        // this.props.navigator.dismissModal({
+        //         animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+        //       });
+      }else{
+        AsyncStorage.setItem('userInfo', JSON.stringify(event.payload), ()=>{
+
+      this.setState({userInfo : JSON.stringify(event.payload)});
+
+        this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
+        });      }
+    }
+    if(event.type == 'NavBarButtonPress'){
+      AsyncStorage.setItem('userInfo', '', ()=>{
+        this.setState({"userInfo": ''});
+        });
     }
 }
+
+
   // Set up Linking
   componentDidMount() {
     // Add event listener to handle OAuthLogin:// URLs
     Linking.addEventListener('url', this.handleOpenURL);
+    // Linking.addEventListener('userInfo', this.changeUserInfo);
     // Launched from an external URL
     Linking.getInitialURL().then((url) => {
       if (url) {
         this.handleOpenURL({ url });
       }
     });
+    AsyncStorage.getItem('userInfo').then((data)=>{
+    if(data){
+      this.setState({userInfo :data});
+      this.setState({user : JSON.parse(data)});
+    }
+    // return data ? JSON.parse(data): '';
+  });
   };
 
   componentWillUnmount() {
@@ -83,10 +226,10 @@ constructor(props){
   loginWithGoogle = () => this.openURL('https://e53e164f.ngrok.io/auth/google');
 
   loginWithApp = () => {
-    console.log(this.props.navigator);
      this.props.navigator.showModal({
       screen: 'LoginScreen',
       title: 'Login In',
+      overrideBackPress: true,
       navigatorStyle: {
           navBarButtonColor: '#859cc1',
           navBarHeight: 50,
@@ -97,53 +240,56 @@ constructor(props){
           tabFontFamily: 'BioRhyme-Bold',
           drawUnderTabBar: true,
           topBarCollapseOnScroll: true,
-navBarTextColor: '#859cc1',
-}, navigatorButtons: {
-  leftButtons: [
+          navBarTextColor: '#859cc1',
+          },
+          passProps:{
+            onDone: (data) =>{
+              this.props.navigator.dismissModal({
+                animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+              });
+              this.props.navigator.handleDeepLink({
+                link: 'logged-in',
+                payload: data // (optional) Extra payload with deep link
+              });
+
+              // this.props.navigator.setButtons(this.navigatorRightButtons(this.props.navigator));
+            }
+          },
+      navigatorButtons:{
+        leftButtons: [
         {
-          id: 'done',
-          // component: 'CustomButton',
-          // passProps: {
-          //   text: 'Hi!',
-          //   navigator
-          // }
+          id: 'backWithCheck',
+          component: 'backButton',
+          passProps: {
+            text: 'Hi!',
+            navigator,
+            onDone: ()=>{
+              this.props.navigator.dismissModal({
+                animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+              });
+              this.props.navigator.switchToTab({
+                tabIndex: 2 // (optional) if missing, this screen's tab will become selected
+              });
+            }
+          }
         }
       ]
-}
-    });
-//     this.props.navigator.push({
-//       screen: 'LoginScreen', // unique ID registered with Navigation.registerScreen
-//   title: 'Login in' , // navigation bar title of the pushed screen (optional)
-//   subtitle: undefined, // navigation bar subtitle of the pushed screen (optional)
-//   titleImage: require('../img/sun.gif'), // iOS only. navigation bar title image instead of the title text of the pushed screen (optional)
-//   passProps: {}, // Object that will be passed as props to the pushed screen (optional)
-//   animated: true, // does the push have transition animation or does it happen immediately (optional)
-//   animationType: 'fade', // 'fade' (for both) / 'slide-horizontal' (for android) does the push have different transition animation (optional)
-//   backButtonTitle: undefined, // override the back button title (optional)
-//   backButtonHidden: false, // hide the back button altogether (optional)
-//   navigatorStyle: {
-//           navBarButtonColor: '#859cc1',navBarHeight: 50,
-//           navBarTextColor: '#000000',
-//           navigationBarColor: '#003a66',
-//           navBarBackgroundColor: '#003a66',
-//           statusBarColor: '#002b4c',
-//           tabFontFamily: 'BioRhyme-Bold',
-//           drawUnderTabBar: true,
-//           topBarCollapseOnScroll: true,
-// navBarTextColor: '#859cc1',
-// },// override the navigator style for the pushed screen (optional)
-//   navigatorButtons: {}, // override the nav buttons for the pushed screen (optional)
-//   // enable peek and pop - commited screen will have `isPreview` prop set as true.
-//   previewView: undefined, // react ref or node id (optional)
-//   previewHeight: undefined, // set preview height, defaults to full height (optional)
-//   previewCommit: true, // commit to push preview controller to the navigation stack (optional)
-//   previewActions: [{ // action presses can be detected with the `PreviewActionPress` event on the commited screen.
-//     id: '', // action id (required)
-//     title: '', // action title (required)
-//     style: undefined, // 'selected' or 'destructive' (optional)
-//     actions: [], // list of sub-actions
-//   }],
-//     })
+        }});
+
+  }
+    navigatorRightButtons = (navigator) => {
+    return {
+      rightButtons: [
+        {
+          id: 'compose',
+          title: 'Log Out',
+          passProps: {
+            text: 'Hi!',
+            navigator
+          }
+        }
+      ]
+    };
   }
   // Open URL in a browser
   openURL = (url) => {
@@ -159,66 +305,340 @@ navBarTextColor: '#859cc1',
       Linking.openURL(url);
     }
   };
+  onPressPlace = () => {
+    console.log('place')
+  }
 
-  render() {
-    const { user } = this.state;
-    return (
-      <View style={styles.container}>
-        { user
-          ? // Show user info if already logged in
-            <View style={styles.content}>
-              <Text style={styles.header}>
-                Welcome {user.name}!
-              </Text>
-              <View style={styles.avatar}>
-                <Image source={{ uri: user.avatar }} style={styles.avatarImage} />
+  onPressTel = number => {
+    Linking.openURL(`tel:${number}`).catch(err => console.log('Error:', err))
+  }
+
+  onPressSms = () => {
+    console.log('sms')
+  }
+
+  onPressEmail = email => {
+    Linking.openURL(`mailto:${email}?subject=subject&body=body`).catch(err =>
+      console.log('Error:', err)
+    )
+  }
+  editProfile = () =>{
+    this.setState({"edit": true});
+  }
+  save = ()=>{
+    // console.log({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: base64.encode(this.state.dataPhoto), tel: this.state.user.tel});
+    console.log({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: this.state.dataPhoto, tel: "123", id:this.state.user.id});
+    api.updateUser({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: this.state.dataPhoto, tel: "123", id:this.state.user.id}).then(function(response){
+      console.log(response);
+      var obj = this.state.user;
+      obj.image = this.state.dataPhoto;
+      this.setState({user:obj});
+      this.setState({userInfo:JSON.stringify(obj)});
+      this.setState({edit:false});
+      console.log(obj);
+      AsyncStorage.setItem('userInfo', JSON.stringify(obj), ()=>{
+        console.log("info updated", obj);
+      });
+
+    }.bind(this));
+  }
+  handleCameraAction() {
+        var options = {
+            title: 'Select Avatar',
+            customButtons: [
+                {
+                    name: 'fb',
+                    title: 'Choose Photo from Facebook'
+                }
+            ],
+            storageOptions: {
+                skipBackup: true,
+                path: 'images'
+            },
+            allowsEditing: true
+        };
+
+        /**
+ * The first arg is the options object for customization (it can also be null or omitted for default options),
+ * The second arg is the callback which sends object: response (more info below in README)
+ */
+        ImagePicker.showImagePicker(options, (response) => {
+            console.log('Response = ', response);
+
+            if (response.didCancel) {
+                console.log('User cancelled image picker');
+            } else if (response.error) {
+                console.log('ImagePicker Error: ', response.error);
+            } else if (response.customButton) {
+                console.log('User tapped custom button: ', response.customButton);
+            } else {
+                // You can display the image using either data...
+                const source = {
+                    uri: 'data:image/jpeg;base64,' + response.data,
+                    isStatic: true
+                };
+
+                // or a reference to the platform specific asset location
+                if (Platform.OS === 'ios') {
+                    const source = {
+                        uri: response.uri.replace('file://', ''),
+                        isStatic: true
+                    };
+                } else {
+                    const source = {
+                        uri: response.uri,
+                        isStatic: true
+                    };
+                }
+                this.setState({avatarSource: source, dataPhoto: response.data});
+            }
+        }, function(err) {
+            console.log("err: ", err);
+        });
+    }
+
+  renderHeader = (user, edit) => {
+    var userImage = user.image ? 'data:image/png;base64,' + user.image : null;
+    if(edit){
+      return(
+        <View style={styles.headerContainer}>
+      <ImageBackground
+          style={styles.headerBackgroundImage}
+          blurRadius={10}
+          source={header}
+        >
+         <View style={styles.headerColumn}>
+         <View style={styles.userAddressRow}>
+              <View>
+                <Icon
+                  name="save"
+                  underlayColor="transparent"
+                  iconStyle={styles.placeIcon}
+                  onPress={this.save}
+                />
+              </View>
+              <View style={styles.userCityRow}>
+                <Text style={styles.userNameText2}>
+                  Save
+                </Text>
               </View>
             </View>
-          : // Show Please log in message if not
-            <View style={styles.content}>
+         { user.image ?
+          <View>
+                <Image source={{ uri: userImage }} style={styles.userImage} />
+                <TouchableOpacity onPress={this.handleCameraAction.bind(this)} style={styles.cameraButton}>
+                    <Icon2 name="camera" size={34} color={'#405979'}/>
+                </TouchableOpacity>
+                </View>
+                :
+                <View>
+                <Image source={this.state.avatarSource} style={styles.userImage} />
+                <TouchableOpacity onPress={this.handleCameraAction.bind(this)} style={styles.cameraButton}>
+                    <Icon2 name="camera" size={34} color={'#405979'}/>
+                </TouchableOpacity>
+                </View>
+              }
+              <View style={styles.userAddressRow}>
+              <Text style={styles.userNameText2}>First Name:</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => {
+                var obj = this.state.user;
+                obj.first_name = text;
+                this.setState({user: obj})
+                }
+              }
+              value={this.state.user.first_name}
+            />
+            <Text style={styles.userNameText2}>Last Name:</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => {
+                var obj = this.state.user;
+                obj.last_name = text;
+                this.setState({user: obj})
+                }
+              }
+              value={this.state.user.last_name}
+            />
+            </View>
+            <TouchableOpacity style={styles.userAddressRow} 
+                  onPress={this.onPressPlace}>
+              <View>
+                <Icon
+                  name="place"
+                  underlayColor="transparent"
+                  iconStyle={styles.placeIcon}
+                />
+              </View>
+              <View style={styles.userCityRow}>
+                <Text style={styles.userCityText}>
+                  {user.location}
+                </Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </ImageBackground>
+            </View>
+        )
+    }else{
+      return (
+        <View style={styles.headerContainer}>
+      <ImageBackground
+          style={styles.headerBackgroundImage}
+          blurRadius={10}
+          source={header}
+        >
+         <View style={styles.headerColumn}>
+         <TouchableOpacity style={styles.userAddressRow} 
+                  onPress={this.editProfile}>
+              <View>
+                <Icon
+                  name="edit"
+                  underlayColor="transparent"
+                  iconStyle={styles.placeIcon}
+                />
+              </View>
+              <View style={styles.userCityRow}>
+                <Text style={styles.userNameText2}>
+                  Edit Profile
+                </Text>
+              </View>
+            </TouchableOpacity>
+         { user.image ?
+                <Image source={{ uri: userImage }} style={styles.userImage} />
+                :
+                <Image source={username} style={styles.userImage} />
+              }
+            <Text style={styles.userNameText}>{user.first_name + ' ' + user.last_name}</Text>
+            <View style={styles.userAddressRow}>
+              <View>
+                <Icon
+                  name="place"
+                  underlayColor="transparent"
+                  iconStyle={styles.placeIcon}
+                  onPress={this.onPressPlace}
+                />
+              </View>
+              <View style={styles.userCityRow}>
+                <Text style={styles.userCityText}>
+                  {user.location}
+                </Text>
+              </View>
+            </View>
+          </View>
+        </ImageBackground>
+            </View>
+      );
+    }
+  }
+  renderTel = (user, edit) => {
+  console.log(edit);
+  return(
+    <ListView
+      contentContainerStyle={styles.telContainer}
+      dataSource={this.state.telDS}
+      renderRow={({ id, name, number }, _, k) => {
+        return (
+          <Tel
+            key={`tel-${id}`}
+            index={k}
+            name={name}
+            number={number}
+            edit={edit}
+            onPressSms={this.onPressSms}
+            onPressTel={this.onPressTel}
+          />
+        )
+      }}
+    />
+    )
+  }
+    renderEmail = (user,edit) => (
+    <ListView
+      contentContainerStyle={styles.emailContainer}
+      dataSource={this.state.emailDS}
+      renderRow={({ email, id, name }, _, k) => {
+        return (
+          <Email
+            key={`email-${id}`}
+            index={k}
+            name={name}
+            email={email}
+            edit={edit}
+            onPressEmail={this.onPressEmail}
+          />
+        )
+      }}
+    />
+  )
+  render() { 
+    var user = this.state.userInfo;
+    setTimeout(() => {
+    user = this.state.userInfo;
+
+        this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
+  },500);
+    if(user !== ''){
+      user = JSON.parse(user);
+      return(
+      <ScrollView style={styles.scroll}>
+        <View style={styles.container}>
+          <Card containerStyle={styles.cardContainer}>
+            {this.renderHeader(user, this.state.edit)}
+            {this.renderTel(user, this.state.edit)}
+            {Separator()}
+            {this.renderEmail(user, this.state.edit)}
+          </Card>
+        </View>
+      </ScrollView>
+        );
+    }else{
+      return(
+      <View style={styles.container}>
+      <View style={styles.content}>
               <Text style={styles.header}>
                 Welcome Stranger!
               </Text>
               <View style={styles.avatar}>
-                <Icon name="user-circle" size={100} color="rgba(0,0,0,.09)" />
+                <Icon2 name="user-circle" size={100} color="rgba(0,0,0,.09)" />
               </View>
               <Text style={styles.text}>
                 Please log in to continue {'\n'}
                 to the awesomness
               </Text>
-            </View>
-        }
-        {/* Login buttons */}
 
         <View style={styles.button}>
-          <Icon.Button
+          <Icon2.Button
           name="cloud"
           backgroundColor="#859cc1"
           onPress={this.loginWithApp}
           {...iconStyles}
         >
         Weather Prediction
-        </Icon.Button>
+        </Icon2.Button>
         </View>
         <View style={styles.buttons}>
-          <Icon.Button
+          <Icon2.Button
             name="facebook"
             backgroundColor="#3b5998"
             onPress={this.loginWithFacebook}
           >
             Login with Facebook
-          </Icon.Button>
-          <Icon.Button
+          </Icon2.Button>
+          <Icon2.Button
             name="google"
             backgroundColor="#DD4B39"
             onPress={this.loginWithGoogle}
             {...iconStyles}
           >
             Or with Google
-          </Icon.Button>
+          </Icon2.Button>
+        </View>
         </View>
       </View>
-    );
+      );
+    }
   }
 }
 
@@ -228,10 +648,6 @@ const iconStyles = {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF',
-  },
   content: {
     flex: 1,
     justifyContent: 'center',
@@ -265,5 +681,97 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginLeft: 100,
     marginBottom: 30,
+  },
+  cameraButton: {
+      alignSelf: 'center',
+      marginRight: 11
+  },
+  cardContainer: {
+    backgroundColor: '#FFF',
+    borderWidth: 0,
+    flex: 1,
+    margin: 0,
+    padding: 0,
+  },
+  container: {
+    flex: 1,
+  },
+  emailContainer: {
+    backgroundColor: '#FFF',
+    flex: 1,
+    paddingTop: 30,
+  },
+  headerBackgroundImage: {
+    paddingBottom: 20,
+    paddingTop: 35,
+  },
+  headerContainer: {},
+  headerColumn: {
+    backgroundColor: 'transparent',
+    ...Platform.select({
+      ios: {
+        alignItems: 'center',
+        elevation: 1,
+        marginTop: -1,
+      },
+      android: {
+        alignItems: 'center',
+      },
+    }),
+  },
+  placeIcon: {
+    color: 'white',
+    fontSize: 26,
+  },
+  scroll: {
+    backgroundColor: '#FFF',
+  },
+  telContainer: {
+    backgroundColor: '#FFF',
+    flex: 1,
+    paddingTop: 30,
+  },
+  userAddressRow: {
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  userCityRow: {
+    backgroundColor: 'transparent',
+  },
+  userCityText: {
+    color: '#A5A5A5',
+    fontSize: 15,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+  userImage: {
+    borderColor: mainColor,
+    borderRadius: 85,
+    borderWidth: 3,
+    height: 170,
+    marginBottom: 15,
+    width: 170,
+  },
+  userNameText: {
+    color: '#FFF',
+    fontSize: 22,
+    fontWeight: 'bold',
+    paddingBottom: 8,
+    textAlign: 'center',
+  },
+  userNameText2: {
+    color: '#FFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+    left:0,
+    textAlign: 'center',
+  },
+  input: {
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+    width: 90,
+    height: 30,
+    color: '#000000',
+    left:0,
+    marginRight:20
   },
 });

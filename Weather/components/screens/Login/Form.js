@@ -25,7 +25,7 @@ export default class Form extends Component {
 			press: false,
 			username: '',
 			password: '',
-			visibleHeight: Dimensions.get('window').height -450
+			visibleHeight: Dimensions.get('window').height -550
 		};
 		this.showPass = this.showPass.bind(this);
 	}
@@ -40,11 +40,11 @@ export default class Form extends Component {
   }
 	keyboardWillShow (e) {
      let newSize = Dimensions.get('window').height - e.endCoordinates.height
-     this.setState({visibleHeight: newSize})
+     // this.setState({visibleHeight: newSize})
    }
 
    keyboardWillHide (e) {
-     this.setState({visibleHeight: Dimensions.get('window').height})
+     // this.setState({visibleHeight: Dimensions.get('window').height})
    }
 	 componentWillReceiveProps(nextProps) {
 		 this.setState({
@@ -58,7 +58,7 @@ export default class Form extends Component {
 			<KeyboardAvoidingView behavior='padding'
 				style={styles.container}>
 				<UserInput source={usernameImg}
-					placeholder='Username'
+					placeholder='Email'
 					autoCapitalize={'none'}
 					returnKeyType={'done'}
 					autoCorrect={false}
@@ -77,7 +77,7 @@ export default class Form extends Component {
 					>
 						<Image source={eyeImg} style={styles.iconEye} />
 					</TouchableOpacity>
-					<ButtonSubmit username={this.state.username} password={this.state.password}/>
+					<ButtonSubmit username={this.state.username} password={this.state.password} navigator={this.props}/>
 			</KeyboardAvoidingView>
 			</View>
 		);
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
 	},
 	btnEye: {
     position: 'absolute',
-    top: 60,
+    top: 90,
     right: 28,
   },
   iconEye: {

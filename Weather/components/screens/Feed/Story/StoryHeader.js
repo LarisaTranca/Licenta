@@ -17,14 +17,11 @@ import {
   Icon,
   ionicon,
   moment
-} from '@utils'
-
-// import gql from 'graphql-tag';
-// import { graphql } from 'react-apollo';
+} from '@utils';
 
 
 import { colors } from '@styles'
-
+import api from '../../Login/api';
 const defaultProps: StoryHeaderProps = {
   publisher: {
     type: 'attendee',
@@ -40,12 +37,21 @@ class StoryHeader extends React.Component {
     this.handleMorePress = this.handleMorePress.bind(this)
   }
   render(){
-    const created = moment(this.props.createdat).fromNow(true)
+    let imageSource
+    if(this.props.user){
+      imageSource = {
+        uri: 'data:image/jpeg;base64,' + JSON.parse(this.props.user).image,
+        // isStatic: true
+      };
+    }
+    const name = JSON.parse(this.props.user).first_name + ' ' +JSON.parse(this.props.user).last_name;
+    console.log(this.props, "props");
+    const created = moment(this.props.date).fromNow(true)
     return (
       <View style={[this.props.style, styles.container]}>
-        <Image style={styles.avatar} source={this.props.avatar} />
+        <Image style={styles.avatar} source={imageSource} />
         <View style={styles.informations}>
-          <Text style={styles.publisher}>{this.props.userByUserid.name}</Text>
+          <Text style={styles.publisher}>{name}</Text>
           <Text style={styles.publishedDate}>{created + ' ago'}</Text>
         </View>
         {/*TODO: check if post is mine*/}
@@ -58,7 +64,8 @@ class StoryHeader extends React.Component {
   handleMorePress = () => {
     const BUTTONS = [
       'Delete',
-      'Cancel'
+      'Cancel',
+      'Edit'
     ];
     const DESTRUCTIVE_INDEX = 0;
     const CANCEL_INDEX = 1;
@@ -69,11 +76,17 @@ class StoryHeader extends React.Component {
         destructiveButtonIndex: DESTRUCTIVE_INDEX,
       },
       (buttonIndex) => {
+        console.log(buttonIndex);
         if (buttonIndex === DESTRUCTIVE_INDEX) {
           //TODO check if it's the user's post first
           //TODO check also in the database
-          this.props.deletePost()
-          this.props.refetch()
+          api.deletePost({id:this.props.post_id}).then(function(response){
+
+            this.props.onRefreshClicked();
+          }.bind(this));
+        }
+        if(buttonIndex === 2){
+          
         }
       });
     }else{
@@ -96,7 +109,7 @@ const styles = StyleSheet.create({
   publishedDate: { fontSize: 11.7, color: colors.text.grey, },
   moreButton: { alignSelf: 'center'}
 })
-StoryHeader.defaultProps = defaultProps
+// StoryHeader.defaultProps = defaultProps
 // const deletePostQuery = gql`
 //   mutation deletePost ($post: DeletePostByIdInput!){
 //     deletePostById(input: $post){
@@ -115,4 +128,4 @@ StoryHeader.defaultProps = defaultProps
 //     })
 //   }
 // })(StoryHeader)
-// export default StoryHeader
+export default StoryHeader

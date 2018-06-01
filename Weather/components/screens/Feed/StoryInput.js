@@ -26,23 +26,36 @@ import {
     TextInput,
     TouchableOpacity,
     StyleSheet,
-    Platform
+    Platform,
+    AsyncStorage
 } from 'react-native'
-import {generateRandomColor, Icon, ionicon} from '@utils'
+import {generateRandomColor, Icon, ionicon} from '@utils';
+import api from '../Login/api';
 // import gql from 'graphql-tag';
 // import {graphql} from 'react-apollo';
 import ImagePicker from 'react-native-image-picker'
-const defaultAvatar = require('@assets/images/photoProfile4.png')
+const defaultAvatar = require('../../img/profile.png')
 export default class StoryInput extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             textValue: '',
             avatarSource: defaultAvatar,
-            data: undefined
+            data: undefined,
+            filename: '',
+            user:{}
         }
         this.onSubmit = this.onSubmit.bind(this)
     }
+    componentDidMount() {
+        var userInfo = JSON.parse(this.props.user);
+        var imageSource = {
+            uri: 'data:image/jpeg;base64,' + userInfo.image,
+          };
+                    this.setState({user: userInfo});
+                  this.setState({avatarSource :imageSource});
+    }
+
     handleCameraAction() {
         var options = {
             title: 'Select Avatar',
@@ -54,7 +67,9 @@ export default class StoryInput extends React.Component {
             ],
             storageOptions: {
                 skipBackup: true,
-                path: 'images'
+                path: 'images',
+                waitUntilSaved: true,
+                cameraRoll: true
             },
             allowsEditing: true
         };
@@ -91,27 +106,35 @@ export default class StoryInput extends React.Component {
                         isStatic: true
                     };
                 }
-
-                this.setState({avatarSource: source, data: response.data});
+                const filename = response.fileName.substr(0, response.fileName.indexOf('.'));
+                const extension = response.uri.split('.');
+                const name = filename+'.'+extension[extension.length-1];
+                console.log(filename, extension[extension.length-1]);
+                this.setState({avatarSource: source, data: response.data, filename: name});
             }
         }, function(err) {
             console.log("err: ", err);
         });
     }
     onSubmit() {
-        // this.props.submit({body: this.state.textValue, image: this.state.data}).then(({data}) => {
-        //     console.log('got data', data);
-        //     this.props.onRefreshClicked()
-        //     this.setState({textValue: '', avatarSource: defaultAvatar, data: undefined})
-        // }).catch((error) => {
-        //     console.log('there was an error sending the query', error);
-        // });
+        var obj ={
+            image: this.state.data,
+            body: this.state.textValue,
+            user_id: this.state.user.id,
+            filename: this.state.filename,
+            comments: '',
+            reactions: ''
+        }
+        api.postStory(obj).then(function(response){
+            console.log(response);
+            this.setState({textValue: '', data: undefined})
+            this.props.onRefreshClicked()
+        }.bind(this));
     }
     handleTextChange(textValue) {
         this.setState({textValue})
     }
     render() {
-
         return (
             <View style={[this.props.style, styles.container]}>
                 <Image source={this.state.avatarSource} style={styles.avatar}/>

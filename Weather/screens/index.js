@@ -8,14 +8,22 @@ import Feed from '../components/screens/feedScreen';
 import Profile from '../components/screens/profileScreen';
 import Menu from '../components/Menu';
 import CustomButton from '../components/transitions/CustomButton';
+import logOut from '../components/transitions/logOut';
+import backButton from '../components/transitions/backButton';
+import Settings from '../components/transitions/Settings';
 import LoginScreen from '../components/screens/Login/LoginScreen';
+import createAccount from '../components/screens/Login/createAccount';
 // register all screens of the app (including internal ones)
 export function registerScreens() {
 
 
 // Register the component
+  Navigation.registerComponent('Settings', () => Settings);
   Navigation.registerComponent('CustomButton', () => CustomButton);
+  Navigation.registerComponent('logOut', () => logOut);
+  Navigation.registerComponent('backButton', () => backButton);
   Navigation.registerComponent('LoginScreen', () => LoginScreen);
+  Navigation.registerComponent('createAccount', () => createAccount);
   Navigation.registerComponent('Menu', () => Menu);
   Navigation.registerComponent('mainScreen', () => mainScreen);
   Navigation.registerComponent('locationsScreen', () => Locations);

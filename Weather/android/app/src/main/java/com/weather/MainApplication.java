@@ -3,6 +3,10 @@ package com.weather;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.horcrux.svg.SvgPackage;
+import com.arttitude360.reactnative.rngoogleplaces.RNGooglePlacesPackage;
+import com.airbnb.android.react.maps.MapsPackage;
+import com.reactlibrary.RNGooglePlacePickerPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.reactnativenavigation.bridge.NavigationReactPackage;
 import com.reactnative.photoview.PhotoViewPackage;
@@ -25,6 +29,10 @@ public class MainApplication extends NavigationApplication{
    protected List<ReactPackage> getPackages() {
      return Arrays.<ReactPackage>asList(
          new MainReactPackage(),
+            new SvgPackage(),
+            new RNGooglePlacesPackage(),
+            new MapsPackage(),
+            new RNGooglePlacePickerPackage(),
             new ImagePickerPackage(),
            new NavigationReactPackage(),
            new PhotoViewPackage(),

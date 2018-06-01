@@ -28,29 +28,37 @@ import {
 class Story extends React.Component {
   constructor(props) {
     super(props)
+     this.animatedValue = []
+    // this.props.forEach((value) => {
+    //   this.animatedValue[value] = new Animated.Value(0)
+    // })
     this.state = {
        fadeAnim: new Animated.Value(0), // init opacity 0
      };
   }
   componentDidMount() {
     console.log("this.props: ", this.props);
-    Animated.sequence([
-      Animated.delay(this.props.index * 200),
+    this.spin();
+   }
+
+   spin (){
+        Animated.sequence([
       Animated.timing(          // Uses easing functions
         this.state.fadeAnim,    // The value to drive
         {
           toValue: 1,
+          duration:20,
           easing: Easing.elastic(.5)
         }           // Configuration
       )
-    ]).start();
+    ]).start(() => this.spin());
    }
 
   renderBody(props){
     let imageSource
     if (props.image) {
       imageSource = {
-        uri: 'data:image/jpeg;base64,' + props.image,
+        uri: props.image,
         // isStatic: true
       };
     }
@@ -80,7 +88,7 @@ class Story extends React.Component {
       }]}>
         <StoryHeader {...this.props}/>
           {this.renderBody(this.props)}
-        <StoryFooter  {...this.props} style={styles.footer} />
+          <StoryFooter  {...this.props} style={styles.footer} />
       </Animated.View>
     )
   }

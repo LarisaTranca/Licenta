@@ -10,22 +10,24 @@ import {
 	Alert,
 	View,
 	Keyboard,
+	AsyncStorage
 } from 'react-native';
 import api from './api.js';
 import { Actions, ActionConst } from 'react-native-router-flux';
 
-import spinner from '../images/loading.gif';
+import spinner from '../../img/loading.gif';
 
 const DEVICE_WIDTH = Dimensions.get('window').width;
 const DEVICE_HEIGHT = Dimensions.get('window').height;
 const MARGIN = 40;
 
 export default class ButtonSubmit extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		this.state = {
 			isLoading: false,
+			location : ''
 		};
 
 		this.buttonAnimated = new Animated.Value(0);
@@ -44,10 +46,6 @@ export default class ButtonSubmit extends Component {
 
 	_onPress() {
 		Keyboard.dismiss();
-		var crypto = require('crypto')
-		var hashedPass = crypto.createHash('sha1').update(this.props.password).digest('hex')
-		var hashedConfirmPass = crypto.createHash('sha1').update(this.props.confirmPassword).digest('hex')
-		console.log(hashedConfirmPass);
 		if (this.state.isLoading) return;
 
 		this.setState({ isLoading: true });
@@ -59,20 +57,29 @@ export default class ButtonSubmit extends Component {
 				easing: Easing.linear
 			}
 		).start();
-console.log(this.props.confirmPassword);
-setTimeout(() => {
-		var response = api.createAccount({email: this.props.email, password:hashedPass, confirmPassword:hashedConfirmPass});
-		console.log(response);
-		if(response === "Succes insert"){
-				Actions.mapScreen();
+
+	AsyncStorage.getItem('location').then((data)=>{
+		var parse = JSON.parse(data);
+	    if(data){
+	    var res = api.createAccount({first_name: this.props.first_name, last_name: this.props.last_name,email: this.props.email, password:this.props.password, location: parse.locality }).then(function(response){
+	    	console.log(response, this.props);
+			if(response.id[0]){
+				setTimeout(() => {
+				var data2 = {first_name: this.props.first_name, last_name: this.props.last_name,email: this.props.email, password:this.props.password, location:JSON.parse(data).locality, id:response.id[0]};
+				this.props.navigator.navigator.onDone(data2);
 				this.setState({ isLoading: false });
 				this.buttonAnimated.setValue(0);
-		}
-		else{
-			this.setState({ isLoading: false });
-			this.buttonAnimated.setValue(0);
-		}
-	},2000);
+				}, 1300);
+			}
+			else{
+				this.setState({ isLoading: false });
+				this.buttonAnimated.setValue(0);
+			}
+	    }.bind(this));
+
+	    }
+	  });
+		
 	}
 
 	_onGrow() {

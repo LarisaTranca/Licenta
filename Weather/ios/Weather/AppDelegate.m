@@ -6,18 +6,21 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
-
 #import "AppDelegate.h"
 #import <React/RCTBundleURLProvider.h>
 
 #import "RCCManager.h"
 
 #import <React/RCTRootView.h>
+@import GooglePlaces;
+@import GoogleMaps;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [GMSPlacesClient provideAPIKey:@"AIzaSyBDfYplegsFdLGE5GYwHaSDy1pi40iHCWI"];
+  [GMSServices provideAPIKey:@"AIzaSyBDfYplegsFdLGE5GYwHaSDy1pi40iHCWI"];
   NSURL *jsCodeLocation;
 #ifdef DEBUG
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];

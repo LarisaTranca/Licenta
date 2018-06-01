@@ -6,12 +6,16 @@ import ButtonSubmit from './ButtonSubmit';
 import SignupSection from './SignupSection';
 
 export default class LoginScreen extends Component {
+	constructor(props){
+		super(props);
+		console.log(props);
+	}
 	render() {
 		return (
 			<Wallpaper>
 				<Logo />
-				<Form />
-				<SignupSection/>
+				<Form navigator={this.props}/>
+				<SignupSection navigator={this.props}/>
 			</Wallpaper>
 		);
 	}

@@ -13,13 +13,13 @@ import {
   Dimensions,
   RefreshControl
 } from 'react-native';
+import { LineChart, Grid } from 'react-native-svg-charts'
 const renderForecastImage = require('./forecastimage')
-
 import dateFormat from 'dateformat';
 const today = dateFormat(new Date(), 'ddd d mmmm');
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
-const SCREEN_HEIGHT = Dimensions.get('window').height;
+const SCREEN_HEIGHT = Dimensions.get('window').height -450;
 class Background extends React.Component {
   constructor(props) {
     super(props);
@@ -33,18 +33,19 @@ class Background extends React.Component {
     }
   }
    render() {
+    var icon = this.props.icon;
      return (
        <Animated.View key={`background`} style={styles.headerViewAnimated}>
          <View style={styles.headerView}>
            <View>
              <Text style={styles.location}>{this.state.cityName}</Text>
-             <Text style={styles.forecast}>36</Text>
+             <Text style={styles.forecast}>{this.props.temperature}</Text>
            </View>
          <View style={styles.centerView}>
            <View style={styles.centerImageView}>
-             { renderForecastImage('02n', 100, 100) }</View>
+             { renderForecastImage(icon, 100, 100) }</View>
            <View>
-             <Text style={styles.currentTemp}>36</Text>
+             <Text style={styles.currentTemp}>{this.props.temperature}</Text>
              <Text style={styles.feelsLike}>Feels like </Text>
            </View>
          </View>
@@ -72,7 +73,7 @@ export default Background;
 const styles = StyleSheet.create({
   headerViewAnimated: {
     width: SCREEN_WIDTH,
-    height: SCREEN_HEIGHT
+    height: SCREEN_HEIGHT,
   },
   titleViewAnimated: {
     width: SCREEN_WIDTH,

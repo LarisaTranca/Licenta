@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import { View, Text, ActivityIndicator, StyleSheet, Animated, Dimensions, Platform } from 'react-native';
+import { View, Text, ActivityIndicator, StyleSheet, Animated, Dimensions, Platform, AsyncStorage } from 'react-native';
 import Background from '../background.js';
-
 import Wallpaper from '../Wallpaper';
 import Geocoder from 'react-native-geocoder';
+import ForecastBackgroundImage from '../forecastBackgroundImage';
+import LineChartExample from '../transitions/LineChartExample';
+import Separator from '../transitions/Separator';
+import api from './Login/api';
 const getLeftButtonsForAlarmList = () => {
   let leftButtons = []
   if(Platform.OS === 'android') {
@@ -22,7 +25,9 @@ class Main extends React.Component {
         selectedTab: 'home',
         initialPosition: 'unknown',
         lastPosition: 'unknown',
-        cityName: 'unknown'
+        cityName: 'unknown',
+        icon: '',
+        temperature: ''
     };
   }
 
@@ -58,7 +63,21 @@ class Main extends React.Component {
            lng: position.coords.longitude
          };
         Geocoder.geocodePosition(cityName).then(res => {
+        AsyncStorage.setItem('location', JSON.stringify(res[0]), ()=>{
+        
           this.setState({cityName:res[0].locality});
+          var targetDate = new Date();
+          api.getWeather(cityName.lat, cityName.long).then(function(response){
+            this.setState({weather: response});
+            var findTemp = response.filter(function(fctime){
+              return fctime.FCTTIME.hour == targetDate.getHours();
+            })[0];
+            var temp = findTemp.temp.metric;
+            var icon = findTemp.icon;
+            this.setState({temperature: temp});
+            this.setState({icon: icon});
+          }.bind(this));
+        });
        })
        .catch(err => console.log(err))
 
@@ -69,6 +88,7 @@ class Main extends React.Component {
      navigator.geolocation.clearWatch(this.watchID);
   }
   render() {
+    
     if(this.state.cityName === 'unknown'){
       return (
         <View style={[styles.container2, styles.horizontal]}>
@@ -77,10 +97,13 @@ class Main extends React.Component {
       )
     }else{
     return (
-      <Wallpaper>
-      <Background cityName={this.state.cityName}>
+      <ForecastBackgroundImage icon={this.state.icon}>
+      <Background cityName={this.state.cityName} temperature={this.state.temperature} icon={this.state.icon}>
       </Background>
-      </Wallpaper>
+      <Text style={styles.text}>TIMETABLE</Text>
+      {Separator()}
+       <LineChartExample weather={this.state.weather}/>
+      </ForecastBackgroundImage>
 
     );
   }
@@ -99,5 +122,9 @@ const styles = StyleSheet.create ({
    boldText: {
       fontSize: 30,
       color: 'red',
+   },
+   text: {
+    fontSize:20,
+    color:'white'
    }
 })

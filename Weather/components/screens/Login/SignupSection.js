@@ -11,8 +11,8 @@ import {
 import { Actions, ActionConst } from 'react-native-router-flux';
 const MARGIN = 40;
 export default class SignupSection extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		this.state = {
 			isLoading: false,
@@ -50,7 +50,62 @@ export default class SignupSection extends Component {
 		}, 200);
 
 		setTimeout(() => {
-			Actions.createAccount();
+			// Actions.createAccount();
+			// console.log(this.props);
+			//  this.props.navigator.navigator.showModal({
+   //    screen: 'createAccount',
+   //    title: 'Create Account',
+   //    overrideBackPress: true,
+   //    navigatorStyle: {
+   //        navBarButtonColor: '#859cc1',
+   //        navBarHeight: 50,
+   //        navBarTextColor: '#000000',
+   //        navigationBarColor: '#003a66',
+   //        navBarBackgroundColor: '#003a66',
+   //        statusBarColor: '#002b4c',
+   //        tabFontFamily: 'BioRhyme-Bold',
+   //        drawUnderTabBar: true,
+   //        topBarCollapseOnScroll: true,
+   //        navBarTextColor: '#859cc1',
+   //        },
+   //        passProps:{
+   //          onDone: (data) =>{
+   //            this.props.navigator.dismissModal({
+   //              animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+   //            });
+   //            this.props.navigator.handleDeepLink({
+   //              link: 'logged-in',
+   //              payload: data // (optional) Extra payload with deep link
+   //            });
+
+   //            // this.props.navigator.setButtons(this.navigatorRightButtons(this.props.navigator));
+   //          }
+   //        },
+   //    navigatorButtons:{
+   //      leftButtons: [
+   //      {
+   //        id: 'backWithCheck',
+   //        component: 'backButton',
+   //        passProps: {
+   //          text: 'Hi!',
+   //          navigator,
+   //          onDone: ()=>{
+   //            this.props.navigator.dismissModal({
+   //              animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+   //            });
+   //            this.props.navigator.switchToTab({
+   //              tabIndex: 2 // (optional) if missing, this screen's tab will become selected
+   //            });
+   //          }
+   //        }
+   //      }
+   //    ]
+   //      }});
+   			
+			
+			 this.props.navigator.navigator.handleDeepLink({
+                link: 'create'
+              });
 			this.setState({ isLoading: false });
 			this.buttonAnimated.setValue(0);
 			this.growAnimated.setValue(0);

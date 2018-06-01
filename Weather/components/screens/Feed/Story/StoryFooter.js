@@ -20,6 +20,7 @@ import {
 import {
   colors
 } from '@styles'
+import api from '../../Login/api';
 const IconAnimated = Animated.createAnimatedComponent(Icon)
 // import gql from 'graphql-tag';
 // import { graphql } from 'react-apollo';
@@ -60,12 +61,15 @@ const defaultProps: StoryFooterProps = {
 }
 class StoryFooter extends React.Component {
   constructor(props:StoryFooterProps) {
-    super(props)
+    console.log(props);
+    super(props);
+    console.log(this.props.reactions);
+    reactions = this.props.reactions === '' ? [] : JSON.parse(this.props.reactions);
     this.state = {
       likedByCurrentUser:
-        this.props.userLikePostsByPostid.nodes.some(user=>user.userByUserid.id === this.props.userByUserid.id)
+        reactions.some(user=>user === this.props.user.id)
         &&
-        this.props.userLikePostsByPostid.totalCount !== 0,
+        this.props.reactions.length !== 0,
     }
     this.like = this.like.bind(this)
     this.unlike = this.unlike.bind(this)
@@ -82,41 +86,41 @@ class StoryFooter extends React.Component {
   like(){
     this.setState({
       likedByCurrentUser: !this.state.likedByCurrentUser,
-    })
-    this.props.likePost({userId: 1})
-      .then(({ data }) => {
-        console.log('got data', data);
-        this.props.refetch().then(data=>{
-
-        })
-      }).catch((error) => {
-        this.setState({
-          likedByCurrentUser: !this.state.likedByCurrentUser,
-        })
-        console.log('there was an error sending the query', error);
-      });
+    });
+    var reactions = this.props.reactions === '' ? [] : JSON.parse(this.props.reactions);
+    reactions.push(this.props.user_id);
+    var params = {
+      reactions: JSON.stringify(reactions),
+      comments : this.props.comments,
+      body : this.props.body,
+      id: this.props.post_id
+    }
+    api.updateStory(params).then(function(response){
+      this.props.onRefreshClicked();
+    }.bind(this));
   }
   unlike(){
     this.setState({
       likedByCurrentUser: !this.state.likedByCurrentUser,
-    })
-    this.props.unlikePost({userId: 1})
-      .then(({ data }) => {
-        console.log('got data', data);
-        this.props.refetch().then(data=>{
-
-        })
-      }).catch((error) => {
-        this.setState({
-          likedByCurrentUser: !this.state.likedByCurrentUser,
-        })
-        console.log('there was an error sending the query', error);
-      });
+    });
+    var reactions = this.props.reactions === '' ? [] : JSON.parse(this.props.reactions);
+    reactions = reactions.filter(function(reaction){
+      return reaction !== this.props.user_id;
+    }.bind(this));
+    var params = {
+      reactions: JSON.stringify(reactions),
+      comments : this.props.comments,
+      body : this.props.body,
+      id: this.props.post_id
+    }
+    api.updateStory(params).then(function(response){
+      this.props.onRefreshClicked();
+    }.bind(this));
   }
   share(){
     Share.share({
       message: this.props.body,
-      title: 'Post by ' + this.props.userByUserid.name,
+      title: 'Post by ' + this.props.user.first_name + this.props.user.last_name,
       url: "https://google.com",
     }, {
       dialogTitle: "Share post",
@@ -136,7 +140,10 @@ class StoryFooter extends React.Component {
   }
   render(){
     //TODO: use yahoo intl
-    let likes = this.props.userLikePostsByPostid.totalCount
+    console.log(JSON.parse(this.props.reactions),"!!!!!");
+    let reaction = this.props.reactions == '' ? [] : JSON.parse(this.props.reactions);
+    console.log(reaction, 'react');
+    let likes = reaction.length
     // let likes = rand
     let likesText
     if (likes === 0) {
@@ -146,14 +153,17 @@ class StoryFooter extends React.Component {
     }else{
       likesText = likes + ' Likes'
     }
+    let comments = this.props.comments === '' ? [] : JSON.parse(this.props.comments);
+    let commentsCount = comments.length;
     let commentsText
-    if (this.props.comments === 0) {
+    if (commentsCount === 0) {
       commentsText = 'Comment'
-    }else if(this.props.comments === 1){
+    }else if(commentsCount === 1){
       commentsText = '1 Comment'
     }else{
-      commentsText = this.props.comments + ' Comments'
+      commentsText = commentsCount + ' Comments'
     }
+    console.log(commentsText);
 
     return (
       <View style={[this.props.style, styles.container]}>
@@ -173,20 +183,23 @@ class StoryFooter extends React.Component {
 
                />
             }
-          </TouchableOpacity>
+
           <Text style={styles.actionText}>{likesText}</Text>
+          </TouchableOpacity>
         </View>
-        {/* <View style={styles.actionContainer}>
+        { <View style={styles.actionContainer}>
           <TouchableOpacity style={styles.actionButton}>
             <Icon name={ionicon('chatboxes')} size={24} color={colors.text.grey} />
-          </TouchableOpacity>
+            
           <Text style={styles.actionText}>{commentsText}</Text>
-        </View> */}
+          </TouchableOpacity>
+        </View> }
         <View style={styles.actionContainer}>
           <TouchableOpacity style={styles.actionButton} onPress={this.share.bind(this)}>
             <Icon name={ionicon('share')} size={24} color={colors.text.grey} />
-          </TouchableOpacity>
+            
           <Text style={styles.actionText}>Share</Text>
+          </TouchableOpacity>
         </View>
       </View>
     )
@@ -200,51 +213,7 @@ const styles = StyleSheet.create({
     },
     actionContainer: { flexDirection: 'row', alignItems: 'center'},
     actionButton: { marginRight: 8, },
-    actionText: { color: colors.text.grey, fontSize: 14, }
+    actionText: { color: colors.text.grey, fontSize: 12, }
 })
 StoryFooter.defaultProps = defaultProps
-// 
-// const likeQuery = gql`
-//   mutation likePost ($userlikepost: CreateUserLikePostInput!){
-//     createUserLikePost(input: $userlikepost){
-//       userLikePost {
-//         userid
-//       }
-//     }
-//   }
-// `
-// const unlikeQuery = gql`
-//   mutation unlikePost ($userlikepost: DeleteUserLikePostByUseridAndPostidInput!){
-//     deleteUserLikePostByUseridAndPostid(input: $userlikepost){
-//       userLikePost {
-//         userid
-//       }
-//     }
-//   }
-// `
-// export default graphql(likeQuery, {
-//   props: ({ ownProps, mutate })=> ({
-//     likePost: ({body, userId = 1}) => mutate({ variables: {
-//     	"userlikepost": {
-//        	"userLikePost": {
-//           "userid": 1,
-//         	"postid": ownProps.id
-//         }
-//       }
-//     }})
-//   })
-// })(
-//   graphql(unlikeQuery, {
-//     props: ({ ownProps, mutate })=> {
-//       return ({
-//         unlikePost: ({body, userId = 1}) => mutate({ variables: {
-//         	"userlikepost": {
-//               "userid": 1,
-//             	"postid": ownProps.id
-//           }
-//         }})
-//       })
-//     }
-//   })(StoryFooter)
-// )
-// export default StoryFooter
+export default StoryFooter

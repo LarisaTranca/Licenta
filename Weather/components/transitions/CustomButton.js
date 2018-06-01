@@ -13,7 +13,7 @@ const CustomButton = props => {
     })}
   >
     <View style={styles.button}>
-    <Icon name="ios-menu" size={30} color="#fff" />
+    <Icon name="ios-menu" size={30} color="#ff505c" />
     </View>
   </TouchableOpacity>
 );
