@@ -13,7 +13,7 @@ import {
 	ScrollView
 } from 'react-native';
 import api from './api.js';
-import { Actions, ActionConst } from 'react-native-router-flux';
+// import { Actions, ActionConst } from 'react-native-router-flux';
 import UserInput from './UserInput';
 import SubmitCreateAccount from './SubmitCreateAccount';
 import SignupSection from './SignupSection';

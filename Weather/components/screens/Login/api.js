@@ -1,5 +1,5 @@
 import {AsyncStorage} from 'react-native';
-var url = 'http://localhost:3000/';
+var url = 'https://8d194182.ngrok.io/';
 
 var api = {
     getUser(id){
@@ -60,12 +60,25 @@ var api = {
   },
   getWeather(lat, long){
     return weather(lat, long);
+  },
+  getSettings(id){
+    return settings(id);
+  },
+  postSettings(data){
+    return settingsPost(data);
+  },
+  putSettings(data){
+    return settingsPut(data);
+  },
+  fakeUser(data){
+    return addFakeUser(data);
   }
 };
 async function postAuth(params){
   try{
-  let response = await fetch('https://0c81bb1d.ngrok.io/auth', {
+  let response = await fetch(url +'auth', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -84,6 +97,7 @@ async function postCreate(params){
   try{
   let response = await fetch(url + 'users', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -99,7 +113,6 @@ async function postCreate(params){
 }
 
 async function updateUserInfo(params){
-  console.log(params);
     try{
   let response = await fetch(url + 'users', {
       method: 'PUT',
@@ -122,6 +135,7 @@ async function deleteUser(params){
     try{
   let response = await fetch(url + 'users', {
       method: 'DELETE',
+      mode: 'no-cors',
       headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -137,11 +151,9 @@ async function deleteUser(params){
 }
 
 async function authentification(params){
-  console.log(url + 'users/auth?email='+ params.email + '&password=' + params.password);
   return fetch(url + 'users/auth?email='+ params.email + '&password=' + params.password)
         .then((response) => response.json())
       .then((responseJson) => {
-        console.log(responseJson);
         return responseJson;
       })
       .catch((error) => {
@@ -162,18 +174,15 @@ async function sendMail(params){
 }
 async function getInfo(){
   return AsyncStorage.getItem('userInfo').then((data)=>{
-    console.log(data, "api");
     return data ? JSON.parse(data): '';
   })
   .then((res)=>{
-    console.log(res);
   });
 }
 async function posts(){
    return fetch(url + 'posts/')
         .then((response) => response.json())
       .then((responseJson) => {
-        console.log(responseJson);
         return responseJson;
       })
       .catch((error) => {
@@ -184,6 +193,7 @@ async function postS(params){
     try{
   let response = await fetch(url + 'posts', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -237,7 +247,6 @@ async function getLocations(params){
     return fetch(url + 'locations?user_id='+params.user_id)
         .then((response) => response.json())
       .then((responseJson) => {
-        console.log(responseJson);
         return responseJson;
       })
       .catch((error) => {
@@ -248,6 +257,7 @@ async function addNewLocation(params){
     try{
   let response = await fetch(url + 'locations', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -265,7 +275,6 @@ async function getLocal(lat,long, googleMapsClient){
   try{
     let result = await resolveTime(lat,long, googleMapsClient);
 
-    console.log(result);
     return result;
   }catch(error){
     console.error(error);
@@ -288,7 +297,6 @@ function getLocalTime(lat,long, googleMapsClient){
     };
     var time;
     googleMapsClient.timezone(data, function(err, response) {
-      console.log("AICICICICIIC", err, response);
       if (!err) {
         var offsets = response.json.dstOffset * 1000 + response.json.rawOffset * 1000 // get DST and time zone offsets in milliseconds
         var localdate = new Date(timestamp * 1000 + offsets) // Date object containing current time of Tokyo (timestamp + dstOffset + rawOffset)
@@ -299,13 +307,77 @@ function getLocalTime(lat,long, googleMapsClient){
   });
   }
 async function weather(lat, long){
-    return fetch('http://api.wunderground.com/api/7371ed5d87903525/geolookup/hourly/q/' + lat + ',' + long +'.json')
+    return fetch('https://api.darksky.net/forecast/d3b5de978ee7d30a381b5ff58833753c/' + lat + ',' + long)
         .then((response) => response.json())
       .then((responseJson) => {
-        return responseJson.hourly_forecast;
+        return responseJson.hourly;
       })
       .catch((error) => {
         console.error(error);
       });
+}
+async function settings(id){
+    return fetch(url+'settings?user_id='+id)
+        .then((response) => response.json())
+      .then((responseJson) => {
+        return responseJson.settings[0];
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+}
+async function settingsPost(params){
+    try{
+  let response = await fetch(url + 'settings', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(params)
+  });
+  let responseJson = await response.json();
+  return responseJson;
+  }
+  catch(error){
+    console.error(error);
+  }
+}
+async function settingsPut(params){
+  try{
+  let response = await fetch(url + 'settings', {
+      method: 'PUT',
+      mode: 'CORS',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(params)
+  });
+  let responseJson = await response.json();
+  return responseJson;
+  }
+  catch(error){
+    console.error(error);
+  }
+}
+async function addFakeUser(params){
+    try{
+  let response = await fetch(url + 'users/fake-user', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(params)
+  });
+  let responseJson = await response.json();
+  return responseJson;
+  }
+  catch(error){
+    console.error(error);
+  }
 }
 module.exports = api;

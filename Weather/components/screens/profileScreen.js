@@ -60,6 +60,8 @@ constructor(props){
    this.props.navigator.setOnNavigatorEvent(this.onNavigationEvent.bind(this));
    this.editProfile = this.editProfile.bind(this);
    this.save = this.save.bind(this);
+   this.seTel = this.seTel.bind(this);
+   this.setEmail = this.setEmail.bind(this);
   // (this: any).loginWithApp = this.loginWithApp.bind(this);
 }
   navigatorButtons = (navigator) => {
@@ -76,7 +78,6 @@ constructor(props){
             navigator,
             logOut: ()=>{
               AsyncStorage.setItem('userInfo', '', ()=>{
-                console.log("log out");
               });
             }
           }
@@ -168,12 +169,15 @@ constructor(props){
         //         animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
         //       });
       }else{
+        if(event.link !== 'temperature' && event.link !== 'precipitation'&& event.link !== 'speed'&& event.link !== 'notifications'){
         AsyncStorage.setItem('userInfo', JSON.stringify(event.payload), ()=>{
 
       this.setState({userInfo : JSON.stringify(event.payload)});
 
         this.props.navigator.setButtons(this.navigatorButtons(this.props.navigator));
-        });      }
+        });      
+      }
+      }
     }
     if(event.type == 'NavBarButtonPress'){
       AsyncStorage.setItem('userInfo', '', ()=>{
@@ -306,7 +310,6 @@ constructor(props){
     }
   };
   onPressPlace = () => {
-    console.log('place')
   }
 
   onPressTel = number => {
@@ -314,30 +317,53 @@ constructor(props){
   }
 
   onPressSms = () => {
-    console.log('sms')
   }
 
   onPressEmail = email => {
     Linking.openURL(`mailto:${email}?subject=subject&body=body`).catch(err =>
-      console.log('Error:', err)
     )
   }
   editProfile = () =>{
     this.setState({"edit": true});
   }
+  seTel(text){
+    let newText = '';
+    let numbers = '0123456789';
+
+    for (var i = 0; i < text.length; i++) {
+        if ( numbers.indexOf(text[i]) > -1 ) {
+            newText = newText + text[i];
+        }
+    }  
+    var obj = this.state.user;
+    obj.tel = text; 
+    this.setState({user:obj});
+  }
+  setEmail(text){
+    // let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+    // if(reg.test(text) === false)
+    // {
+    // console.log("Email is Not Correct");
+    // this.setState({email:text})
+    // return false;
+    // }
+    // else {
+    //   this.setState({email:text})
+    //   console.log("Email is Correct");
+    // }
+    var obj = this.state.user;
+    obj.email = text; 
+    this.setState({user:obj});
+  }
   save = ()=>{
-    // console.log({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: base64.encode(this.state.dataPhoto), tel: this.state.user.tel});
-    console.log({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: this.state.dataPhoto, tel: "123", id:this.state.user.id});
-    api.updateUser({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: this.state.dataPhoto, tel: "123", id:this.state.user.id}).then(function(response){
-      console.log(response);
+    const image = !this.state.dataPhoto ? this.state.user.image : this.state.dataPhoto;
+    api.updateUser({first_name: this.state.user.first_name, last_name: this.state.user.last_name, image: image, tel: this.state.user.tel, id:this.state.user.id}).then(function(response){
       var obj = this.state.user;
-      obj.image = this.state.dataPhoto;
+      obj.image = image;
       this.setState({user:obj});
       this.setState({userInfo:JSON.stringify(obj)});
       this.setState({edit:false});
-      console.log(obj);
       AsyncStorage.setItem('userInfo', JSON.stringify(obj), ()=>{
-        console.log("info updated", obj);
       });
 
     }.bind(this));
@@ -363,14 +389,12 @@ constructor(props){
  * The second arg is the callback which sends object: response (more info below in README)
  */
         ImagePicker.showImagePicker(options, (response) => {
-            console.log('Response = ', response);
 
             if (response.didCancel) {
-                console.log('User cancelled image picker');
             } else if (response.error) {
-                console.log('ImagePicker Error: ', response.error);
+                // console.log('ImagePicker Error: ', response.error);
             } else if (response.customButton) {
-                console.log('User tapped custom button: ', response.customButton);
+                // console.log('User tapped custom button: ', response.customButton);
             } else {
                 // You can display the image using either data...
                 const source = {
@@ -393,7 +417,7 @@ constructor(props){
                 this.setState({avatarSource: source, dataPhoto: response.data});
             }
         }, function(err) {
-            console.log("err: ", err);
+            // console.log("err: ", err);
         });
     }
 
@@ -533,44 +557,23 @@ constructor(props){
     }
   }
   renderTel = (user, edit) => {
-  console.log(edit);
   return(
-    <ListView
-      contentContainerStyle={styles.telContainer}
-      dataSource={this.state.telDS}
-      renderRow={({ id, name, number }, _, k) => {
-        return (
           <Tel
-            key={`tel-${id}`}
-            index={k}
-            name={name}
-            number={number}
+            number={user.tel}
             edit={edit}
+            seTel={this.seTel}
             onPressSms={this.onPressSms}
             onPressTel={this.onPressTel}
-          />
-        )
-      }}
     />
     )
   }
     renderEmail = (user,edit) => (
-    <ListView
-      contentContainerStyle={styles.emailContainer}
-      dataSource={this.state.emailDS}
-      renderRow={({ email, id, name }, _, k) => {
-        return (
-          <Email
-            key={`email-${id}`}
-            index={k}
-            name={name}
-            email={email}
-            edit={edit}
-            onPressEmail={this.onPressEmail}
-          />
-        )
-      }}
-    />
+      <Email
+        email={user.email}
+        edit={edit}
+        setEmail={this.setEmail}
+        onPressEmail={this.onPressEmail}
+      />
   )
   render() { 
     var user = this.state.userInfo;

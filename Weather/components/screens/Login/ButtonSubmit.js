@@ -11,7 +11,7 @@ import {
 	View,
 	Keyboard,
 } from 'react-native';
-import { Actions, ActionConst } from 'react-native-router-flux';
+// import { Actions, ActionConst } from 'react-native-router-flux';
 import api from './api.js';
 import spinner from '../../img/loading.gif';
 
@@ -22,7 +22,6 @@ const MARGIN = 40;
 export default class SubmitCreateAccount extends Component {
 	constructor(props) {
 		super(props);
-		console.log(props);
 
 		this.state = {
 			isLoading: false,

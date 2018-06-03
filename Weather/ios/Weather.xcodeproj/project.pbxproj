@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -64,6 +65,10 @@
 		B4818DF4A8E443319E60D3C6 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C6EF67E3124631810249CD /* libRNVectorIcons.a */; };
 		BD3CB0932639492DB4484E22 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F2CDFCAF3C04ABA8A499C8C /* Rubik-Bold.ttf */; };
 		C8C898017B964E748D745434 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6F487D202684B02A80984E8 /* Rubik-Italic.ttf */; };
+		D028868720C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D028865620C2B9AC00BE1701 /* GoogleService-Info.plist */; };
+		D028868820C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D028865620C2B9AC00BE1701 /* GoogleService-Info.plist */; };
+		D028868920C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D028865620C2B9AC00BE1701 /* GoogleService-Info.plist */; };
+		D028868A20C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D028865620C2B9AC00BE1701 /* GoogleService-Info.plist */; };
 		D02AB8ED20AF637C00C68747 /* libRNGooglePlaces.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D02AB8EC20AF61D100C68747 /* libRNGooglePlaces.a */; };
 		D0A4314120B218CA00741D68 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A4313C20B218B000741D68 /* libRNSVG.a */; };
 		D0F713AF20AAC56C00F840EA /* libSafariViewManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F713AE20AAC37600F840EA /* libSafariViewManager.a */; };
@@ -498,6 +503,7 @@
 		BDA5843480A14A838018BA65 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BoldItalic.ttf"; path = "../node_modules/@shoutem/ui/fonts/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
 		C1CBB40A42BE4F9E8386D2DC /* RNPhotoView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPhotoView.xcodeproj; path = "../node_modules/react-native-photo-view/ios/RNPhotoView.xcodeproj"; sourceTree = "<group>"; };
 		CB4FFB10A5FF4629A5FC755F /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		D028865620C2B9AC00BE1701 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D068D2D6AA3A49CBBEA01CF3 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		D0A4310A20B218B000741D68 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		D0F713A920AAC37600F840EA /* SafariViewManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SafariViewManager.xcodeproj; path = "../node_modules/react-native-safari-view/SafariViewManager.xcodeproj"; sourceTree = "<group>"; };
@@ -667,6 +673,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D028865620C2B9AC00BE1701 /* GoogleService-Info.plist */,
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -1487,6 +1494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D028868820C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1523,6 +1531,7 @@
 				AA15722AEDFE4829B32C67D8 /* FontAwesome.ttf in Resources */,
 				39592DF42BD743FF9CE5E852 /* Foundation.ttf in Resources */,
 				4EE63AC646724E968CA5DFCA /* Ionicons.ttf in Resources */,
+				D028868720C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */,
 				8053D8CB2C544883A0514E04 /* MaterialIcons.ttf in Resources */,
 				7D9FFC40D8F94C7CB2779291 /* Octicons.ttf in Resources */,
 				69FADC6ADBBB49F1A7B78618 /* Roboto_medium.ttf in Resources */,
@@ -1537,6 +1546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				D028868920C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1544,6 +1554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D028868A20C2B9AC00BE1701 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@
 #import <React/RCTRootView.h>
 @import GooglePlaces;
 @import GoogleMaps;
+@import Firebase;
 
 @implementation AppDelegate
 
@@ -21,6 +22,7 @@
 {
   [GMSPlacesClient provideAPIKey:@"AIzaSyBDfYplegsFdLGE5GYwHaSDy1pi40iHCWI"];
   [GMSServices provideAPIKey:@"AIzaSyBDfYplegsFdLGE5GYwHaSDy1pi40iHCWI"];
+  [FIRApp configure];
   NSURL *jsCodeLocation;
 #ifdef DEBUG
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];

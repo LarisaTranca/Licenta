@@ -29,6 +29,7 @@ import Locations from './components/screens/locationsScreen';
 import CustomButton from './components/transitions/CustomButton';
 const deviceW = Dimensions.get('window').width;
 import api from './components/screens/Login/api';
+import Geocoder from 'react-native-geocoder';
 const basePx = 375
 function px2dp(px) {
   return px *  deviceW / basePx
@@ -54,12 +55,18 @@ async function prepareIcons() {
 }
 async function startApp() {
   const icons = await prepareIcons();
+  
   AsyncStorage.getItem('userInfo').then((data)=>{
-    var userInfo, listData;
+    var userInfo, listData;var user_id;
     if(data){
       userInfo = data;
+      user_id= JSON.parse(data).id;
+    }else{
+       api.fakeUser({"location": "Timisoara"}).then(function(response){
+        userInfo = JSON.stringify(response.user[0]);
+        user_id = userInfo.id;
+       });
     }
-      var user_id = JSON.parse(data).id;
   if(Platform.OS === 'ios'){
 Navigation.startTabBasedApp({
   tabs: [

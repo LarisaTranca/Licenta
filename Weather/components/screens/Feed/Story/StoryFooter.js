@@ -61,9 +61,7 @@ const defaultProps: StoryFooterProps = {
 }
 class StoryFooter extends React.Component {
   constructor(props:StoryFooterProps) {
-    console.log(props);
     super(props);
-    console.log(this.props.reactions);
     reactions = this.props.reactions === '' ? [] : JSON.parse(this.props.reactions);
     this.state = {
       likedByCurrentUser:
@@ -130,19 +128,14 @@ class StoryFooter extends React.Component {
   showResult(result){
     if (result.action === Share.sharedAction) {
       if (result.activityType) {
-        console.log("result.activityType: ", result.activityType);
       } else {
-        console.log("shared");
       }
     } else if (result.action === Share.dismissedAction) {
-      console.log("dismissed");
     }
   }
   render(){
     //TODO: use yahoo intl
-    console.log(JSON.parse(this.props.reactions),"!!!!!");
     let reaction = this.props.reactions == '' ? [] : JSON.parse(this.props.reactions);
-    console.log(reaction, 'react');
     let likes = reaction.length
     // let likes = rand
     let likesText
@@ -163,7 +156,6 @@ class StoryFooter extends React.Component {
     }else{
       commentsText = commentsCount + ' Comments'
     }
-    console.log(commentsText);
 
     return (
       <View style={[this.props.style, styles.container]}>

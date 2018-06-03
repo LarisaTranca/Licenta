@@ -37,10 +37,12 @@ export default class Locations extends React.Component {
     };
   }
   componentDidMount(){
+    if(this.props.userInfo){
     var user_id = JSON.parse(this.props.userInfo).id;
     api.locations({'user_id': user_id}).then(function(result){
       this.setState({listData:result.locations});
     }.bind(this));
+  }
   }
   componentWillReceiveProps(nextProps){
     // console.log(nextProps);

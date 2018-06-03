@@ -7,7 +7,7 @@ import {
 	Animated,
 	Easing
 } from 'react-native';
-import { Actions, ActionConst } from 'react-native-router-flux';
+// import { Actions, ActionConst } from 'react-native-router-flux';
 
 import arrowImg from '../../img/left-arrow.png';
 

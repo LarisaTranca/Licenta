@@ -8,7 +8,7 @@ import {
 	TouchableOpacity,
 	Easing,
 } from 'react-native';
-import { Actions, ActionConst } from 'react-native-router-flux';
+// import { Actions, ActionConst } from 'react-native-router-flux';
 const MARGIN = 40;
 export default class SignupSection extends Component {
 	constructor(props) {

@@ -48,12 +48,14 @@ export default class StoryInput extends React.Component {
         this.onSubmit = this.onSubmit.bind(this)
     }
     componentDidMount() {
+        if(this.props.user){
         var userInfo = JSON.parse(this.props.user);
         var imageSource = {
             uri: 'data:image/jpeg;base64,' + userInfo.image,
           };
                     this.setState({user: userInfo});
                   this.setState({avatarSource :imageSource});
+              }
     }
 
     handleCameraAction() {
@@ -79,14 +81,10 @@ export default class StoryInput extends React.Component {
  * The second arg is the callback which sends object: response (more info below in README)
  */
         ImagePicker.showImagePicker(options, (response) => {
-            console.log('Response = ', response);
 
             if (response.didCancel) {
-                console.log('User cancelled image picker');
             } else if (response.error) {
-                console.log('ImagePicker Error: ', response.error);
             } else if (response.customButton) {
-                console.log('User tapped custom button: ', response.customButton);
             } else {
                 // You can display the image using either data...
                 const source = {
@@ -109,11 +107,9 @@ export default class StoryInput extends React.Component {
                 const filename = response.fileName.substr(0, response.fileName.indexOf('.'));
                 const extension = response.uri.split('.');
                 const name = filename+'.'+extension[extension.length-1];
-                console.log(filename, extension[extension.length-1]);
                 this.setState({avatarSource: source, data: response.data, filename: name});
             }
         }, function(err) {
-            console.log("err: ", err);
         });
     }
     onSubmit() {
@@ -126,7 +122,6 @@ export default class StoryInput extends React.Component {
             reactions: ''
         }
         api.postStory(obj).then(function(response){
-            console.log(response);
             this.setState({textValue: '', data: undefined})
             this.props.onRefreshClicked()
         }.bind(this));

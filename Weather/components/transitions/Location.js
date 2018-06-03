@@ -41,10 +41,11 @@ class Location extends React.Component {
    this.setState({time: result});
    api.getWeather(lat,long).then(function(result){
     var hour = time.split(':');
-    var findTemp = result.filter(function(fctime){
-      return fctime.FCTTIME.hour == targetDate.getHours();
-    })[0].temp.metric;
-    const temperature = css.addDegreesToEnd(findTemp);
+    var findTemp = result.data.filter(function(fctime){
+      var myDate = new Date(weather.time*1000);
+      return myDate.getHours() == targetDate.getHours() && myDate.getDay() == targetDate.getDay();
+    })[0];
+    const temperature = css.addDegreesToEnd(findTemp.temperature);
     this.setState({temperature: temperature});
    }.bind(this));
   },500);

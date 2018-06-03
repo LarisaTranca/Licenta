@@ -18,16 +18,18 @@ class LineChartExample extends React.PureComponent {
         for (var i = 0; i <= 16; i+=4) {
             var inc = new Date();
             inc.setHours(hour +i);
-            hours.push(parseInt(inc.getHours()));
+            hours.push({'hour':parseInt(inc.getHours()), 'day':parseInt(inc.getDay())});
         }
-        console.log(hours)
              var weather = hours.map(function(hour){
-                var findTemp = nextProps.weather.filter(function(weather){
-                    return weather.FCTTIME.hour == hour;
+                var findTemp = nextProps.weather.data.filter(function(weather){
+                    var myDate = new Date(weather.time*1000);
+                    // console.log(myDate.toLocaleString(), myDate.getDay(), myDate.getHours(), 'time')
+                    return myDate.getHours() == hour.hour && parseInt(myDate.getDay()) == hour.day;
                 })[0];
-                return parseInt(findTemp.temp.metric);
+                //check if F or C
+                return parseInt((findTemp.temperature-32)*5/9);
             });
-            console.log(weather);
+            // console.log(weather);
             weather = weather.filter(function(dt){
                 return typeof dt !== 'undefined';
             });
@@ -103,7 +105,7 @@ class LineChartExample extends React.PureComponent {
                         style={{ marginHorizontal: -5, height: 30, flex:1, flexDirection:'row'}}
                         data={ hours }
                         formatLabel={(value, index) => value + ':00'}
-                        contentInset={{ left: 10, right: 10, rotation: 20}}
+                        contentInset={{ left: 10, right: 10}}
                         svg={{ fontSize: 13, fill: 'white' }}
                         ticks={1}
                     />

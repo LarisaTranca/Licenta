@@ -12,7 +12,7 @@ import {
 	Easing,
 	Keyboard
 } from 'react-native';
-import { Actions, ActionConst } from 'react-native-router-flux';
+// import { Actions, ActionConst } from 'react-native-router-flux';
 import UserInput from './UserInput';
 import ButtonSubmit from './ButtonSubmit';
 import SignupSection from './SignupSection';

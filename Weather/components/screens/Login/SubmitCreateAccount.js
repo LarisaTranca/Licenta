@@ -13,7 +13,7 @@ import {
 	AsyncStorage
 } from 'react-native';
 import api from './api.js';
-import { Actions, ActionConst } from 'react-native-router-flux';
+// import { Actions, ActionConst } from 'react-native-router-flux';
 
 import spinner from '../../img/loading.gif';
 
@@ -62,7 +62,6 @@ export default class ButtonSubmit extends Component {
 		var parse = JSON.parse(data);
 	    if(data){
 	    var res = api.createAccount({first_name: this.props.first_name, last_name: this.props.last_name,email: this.props.email, password:this.props.password, location: parse.locality }).then(function(response){
-	    	console.log(response, this.props);
 			if(response.id[0]){
 				setTimeout(() => {
 				var data2 = {first_name: this.props.first_name, last_name: this.props.last_name,email: this.props.email, password:this.props.password, location:JSON.parse(data).locality, id:response.id[0]};

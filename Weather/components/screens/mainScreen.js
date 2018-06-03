@@ -46,8 +46,7 @@ class Main extends React.Component {
     };
   }
 
-  componentDidMount = () => {
-
+  componentDidMount() {
      navigator.geolocation.getCurrentPosition(
         (position) => {
            const initialPosition = JSON.stringify(position);
@@ -64,15 +63,14 @@ class Main extends React.Component {
          };
         Geocoder.geocodePosition(cityName).then(res => {
         AsyncStorage.setItem('location', JSON.stringify(res[0]), ()=>{
-        
           this.setState({cityName:res[0].locality});
           var targetDate = new Date();
-          api.getWeather(cityName.lat, cityName.long).then(function(response){
+          api.getWeather(cityName.lat, cityName.lng).then(function(response){
             this.setState({weather: response});
-            var findTemp = response.filter(function(fctime){
-              return fctime.FCTTIME.hour == targetDate.getHours();
+            var findTemp = response.data.filter(function(fctime){
+              return fctime.time == targetDate;
             })[0];
-            var temp = findTemp.temp.metric;
+            var temp = (findTemp.temperature-32)*5/9;
             var icon = findTemp.icon;
             this.setState({temperature: temp});
             this.setState({icon: icon});

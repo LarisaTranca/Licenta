@@ -48,59 +48,70 @@ const styles = StyleSheet.create({
     flex: 6,
     flexDirection: 'column',
     justifyContent: 'center',
+  },  input: {
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+    width: 140,
+    height: 30,
+    color: '#000000',
+    left:0,
+    marginRight:20
   },
 })
 
 const Tel = ({
   containerStyle,
-  index,
-  name,
   number,
   edit,
   onPressSms,
   onPressTel,
+  seTel,
 }) => {
-  console.log(edit);
   if(edit){
     return (
+      <TouchableOpacity>
       <View style={[styles.container, containerStyle]}>
         <View style={styles.iconRow}>
-          {+index === 0}
+            <Icon
+              name="call"
+              underlayColor="transparent"
+              iconStyle={styles.telIcon}
+            />
         </View>
         <View style={styles.telRow}>
           <View style={styles.telNumberColumn}>
-            <TextInput style={styles.telNumberText}>{number}</TextInput>
-          </View>
-          <View style={styles.telNameColumn}>
-            {name.trim().length !== 0 && (
-              <Text style={styles.telNameText}>{name}</Text>
-            )}
+            <TextInput
+            keyboardType='numeric'
+              style={styles.input}
+              onChangeText={(text) => seTel(text)}
+              value={number}
+            />
           </View>
         </View>
+        <View style={styles.smsRow}>
+          <Icon
+            name="textsms"
+            underlayColor="transparent"
+            iconStyle={styles.smsIcon}
+          />
+        </View>
       </View>
+    </TouchableOpacity>
       )
   }else{
   return (
     <TouchableOpacity onPress={() => onPressTel(number)}>
       <View style={[styles.container, containerStyle]}>
         <View style={styles.iconRow}>
-          {+index === 0 && (
             <Icon
               name="call"
               underlayColor="transparent"
               iconStyle={styles.telIcon}
               onPress={() => onPressTel(number)}
             />
-          )}
         </View>
         <View style={styles.telRow}>
           <View style={styles.telNumberColumn}>
             <Text style={styles.telNumberText}>{number}</Text>
-          </View>
-          <View style={styles.telNameColumn}>
-            {name.trim().length !== 0 && (
-              <Text style={styles.telNameText}>{name}</Text>
-            )}
           </View>
         </View>
         <View style={styles.smsRow}>
@@ -119,12 +130,11 @@ const Tel = ({
 
 Tel.propTypes = {
   containerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
-  index: PropTypes.string.isRequired,
-  name: PropTypes.string,
   number: PropTypes.string.isRequired,
   edit: PropTypes.boolean,
   onPressSms: PropTypes.func.isRequired,
   onPressTel: PropTypes.func.isRequired,
+  seTel: PropTypes.func.isRequired,
 }
 
 Tel.defaultProps = {

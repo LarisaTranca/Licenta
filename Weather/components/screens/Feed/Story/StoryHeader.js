@@ -37,15 +37,16 @@ class StoryHeader extends React.Component {
     this.handleMorePress = this.handleMorePress.bind(this)
   }
   render(){
-    let imageSource
+    let imageSource;
+    var name;
     if(this.props.user){
       imageSource = {
         uri: 'data:image/jpeg;base64,' + JSON.parse(this.props.user).image,
         // isStatic: true
       };
+      name = JSON.parse(this.props.user).first_name + ' ' +JSON.parse(this.props.user).last_name;
     }
-    const name = JSON.parse(this.props.user).first_name + ' ' +JSON.parse(this.props.user).last_name;
-    console.log(this.props, "props");
+    
     const created = moment(this.props.date).fromNow(true)
     return (
       <View style={[this.props.style, styles.container]}>
@@ -76,7 +77,6 @@ class StoryHeader extends React.Component {
         destructiveButtonIndex: DESTRUCTIVE_INDEX,
       },
       (buttonIndex) => {
-        console.log(buttonIndex);
         if (buttonIndex === DESTRUCTIVE_INDEX) {
           //TODO check if it's the user's post first
           //TODO check also in the database
